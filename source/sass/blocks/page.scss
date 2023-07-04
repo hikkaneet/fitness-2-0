@@ -6,10 +6,13 @@
   margin: 0;
   padding: 0;
   height: 100%;
+  max-width: $bp-max-limiter;
   background-color: grey;
+
+  min-height: 600px;
 }
 
-.page__body_container {
+.page__container {
   height: 100%;
   max-width: 100%;
   margin-left: auto;

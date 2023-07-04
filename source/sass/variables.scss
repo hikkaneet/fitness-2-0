@@ -73,8 +73,9 @@ $retina-dppx:                       1.5dppx;
 // Breakpoints
 // ---------------------------------
 
-$bp-mobile:                         320px;
-$bp-mobile-only:                    767px;
-$bp-tablet:                         768px;
-$bp-tablet-only:                    1199px;
-$bp-desktop:                        1200px;
+$bp-mobile: 320px;
+$bp-mobile-only: 767px;
+$bp-tablet: 768px;
+$bp-tablet-only: 1199px;
+$bp-desktop: 1200px;
+$bp-max-limiter: 2600px;
