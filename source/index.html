@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,13 +8,22 @@
     <title>Fitness 2.0</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <div class="container"></div>
+  <body class="page__body">
+    <div class="page__container">
+      <header class="main-header">
+        <a class="main-header__logo">
+          <picture>
+            <source media="(max-width: 320px)" width="69" height="13" srcset="./img/svg/logo.svg">
+            <source media="(max-width: 768px)" width="82" height="16" srcset="./img/svg/logo.svg">
+            <img src="./img/svg/logo.svg" width="122" height="24" alt="Логотип">
+          </picture>
+        </a>
+        <a class="main-header__phone" href="tel:88005555555">
+          8-800-555-55-55
+        </a>
       </header>
       <main>
-        <section class="intro">
+<!--         <section class="intro">
           <div class="container">
             <h1>Тестовая страница.</h1>
             <p>На данной странице показан пример модальных окон.</p>
@@ -22,15 +31,15 @@
             <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
             <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
           </div>
-        </section>
+        </section> -->
       </main>
       <footer>
-        <div class="container"></div>
+        <!-- <div class="container"></div> -->
       </footer>
     </div>
 
     <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
+<!--     <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
@@ -42,9 +51,9 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+<!--     <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
@@ -56,7 +65,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

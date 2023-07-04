@@ -1,0 +1,21 @@
+.page {
+  color: $color-sapphire;
+}
+
+.page__body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: grey;
+}
+
+.page__body_container {
+  height: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-default-white;
+  position: relative;
+}

@@ -1,0 +1,42 @@
+.main-header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 103px;
+
+  @media (max-width: $bp-tablet) {
+    padding: 40px 45px;
+  }
+
+  @media (max-width: $bp-mobile) {
+    padding: 15px;
+  }
+}
+
+.main-header__logo {
+  cursor: pointer;
+}
+
+.main-header__phone {
+  color: $color-default-white;
+  font-size: 26px;
+  font-family: 'Alumni Sans', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.78px;
+  cursor: pointer;
+
+  @media (max-width: $bp-tablet) {
+    font-size: 24px;
+    letter-spacing: 0.48px;
+  }
+
+  @media (max-width: $bp-mobile) {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+  }
+}
