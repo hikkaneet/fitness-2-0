@@ -1,0 +1,59 @@
+.play-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  background: $button-gradient;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: $color-default-white;
+
+    &::before {
+      background: $color-black-russian;
+    }
+  }
+
+  &:disabled {
+    background: $color-default-white;
+    opacity: 0.4;
+
+    &::before {
+      background: $color-black-russian;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 72px;
+    height: 72px;
+    background: $color-default-white;
+    border-radius: 50%;
+    clip-path: polygon(40% 35%,40% 65%,70% 50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  // &::after {
+  //   position: absolute;
+  //   content: '';
+  //   width: 98px;
+  //   height: 98px;
+  //   border: 2px solid;
+  //   border-image: $button-gradient 1;
+  //   opacity: 0.2;
+  //   border-radius: 50%;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%,-50%);
+  // }
+}
