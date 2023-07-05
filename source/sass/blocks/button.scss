@@ -1,0 +1,20 @@
+.button {
+  display: block;
+  border: 3px solid $color-default-white;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    color: $color-egyptian-blue;
+    background: $color-default-white;
+  }
+
+  &:active {
+    color: $color-sapphire;
+    background: $color-default-white;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+  }
+}

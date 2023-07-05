@@ -58,7 +58,7 @@
 }
 
 .main-footer__nav-link {
-  @include desktop-text-small;
+  @include text-small;
   color: $color-default-white;
   cursor: pointer;
   padding: 10px 0;
