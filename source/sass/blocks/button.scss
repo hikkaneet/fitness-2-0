@@ -2,6 +2,13 @@
   display: block;
   border: 3px solid $color-default-white;
   box-sizing: border-box;
+  font-family: 'Roboto Condensed', 'Arial', 'Helvetica', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
 
   &:hover,
   &:focus {
@@ -16,5 +23,26 @@
 
   &:disabled {
     opacity: 0.4;
+  }
+
+  &--alt {
+    border: 2px solid $color-sapphire;
+
+    &:hover,
+    &:focus {
+      border: 0;
+      color: $color-default-white;
+      background: $button-gradient;
+    }
+
+    &:active {
+      border: 0;
+      color: rgba($color-default-white, 0.7);
+      background: $button-gradient;
+    }
+
+    &:disabled {
+      opacity: 0.4;
+    }
   }
 }

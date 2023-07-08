@@ -2,6 +2,19 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 
+import {attachVideoPlayer} from './iframe-video';
+import {initTabs} from './vendor/init-tabs';
+
+
+attachVideoPlayer();
+
+window.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('load', () => {
+    initTabs();
+  });
+});
+
+
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
