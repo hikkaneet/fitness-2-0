@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 @import "vendor/data-tabs";
 @import "vendor/tabs";
@@ -36,6 +36,7 @@
 @import "blocks/play-button";
 @import "blocks/membership";
 @import "blocks/super-games";
+@import "blocks/coaches";
 
 // ---------------------------------
 

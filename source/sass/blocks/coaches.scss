@@ -1,0 +1,140 @@
+.coaches {
+  padding: 30px 0 104px;
+  position: relative;
+
+  @media (max-width: $bp-tablet-only) {
+    padding: 30px 0 100px;
+  }
+}
+
+.coaches__title {
+font-family: 'Alumni Sans', 'Arial', 'Helvetica', sans-serif;
+font-size: 54px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.62px;
+margin: 0;
+text-align: center;
+}
+
+.coaches__slider {
+  margin: 48px 102px 0 132px;
+
+  @media (max-width: $bp-tablet-only) {
+    margin: 30px 100px 0 130px;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    margin: 30px 0 0 30px;
+  }
+}
+
+.coaches__profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 260px;
+
+  @media (max-width: $bp-tablet-only) {
+    width: 268px;
+  }
+}
+
+.coaches__photo {
+  object-fit: cover;
+}
+
+.coaches__name {
+color: #ffffff;
+font-family: 'Roboto Condensed', 'Arial', 'Helvetica', sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+position: absolute;
+bottom: 30px;
+
+&--hidden {
+  display: none;
+}
+}
+
+.coaches__more-info {
+  padding: 58px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16, 38, 84, 0.9);
+  display: none;
+
+  &--visible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    padding: 58px 40px;
+  }
+}
+
+.coaches__info-name {
+  color: #ffffff;
+font-family: 'Roboto Condensed', 'Arial', 'Helvetica', sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+}
+
+.coaches__info-company {
+  color: #B6BDCC;
+  font-family: 'Roboto Condensed', 'Arial', 'Helvetica', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+}
+
+.coaches__info-list {
+  margin: 44px 0 0;
+  padding: 0;
+}
+
+.coaches__info-item {
+  color: #ffffff;
+  font-family: 'Roboto Condensed', 'Arial', 'Helvetica', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+}
+
+.coaches__slider-prev {
+  left: 50px;
+  color: #AFAFAF;
+
+  @media (max-width: $bp-mobile-only) {
+    left: 20px;
+
+    &::after {
+      font-size: 22px;
+    }
+  }
+}
+
+.coaches__slider-next {
+  right: 50px;
+  color: #AFAFAF;
+
+  @media (max-width: $bp-mobile-only) {
+    right: 20px;
+
+    &::after {
+      font-size: 22px;
+    }
+  }
+}
+
