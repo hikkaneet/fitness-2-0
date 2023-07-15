@@ -3,8 +3,10 @@ import './vendor/swiper';
 import './vendor/focus-visible-polyfill';
 
 import {initTabs} from './vendor/init-tabs';
+import {initAccordions} from './vendor/init-accordion';
 
 initTabs();
+initAccordions();
 
 // eslint-disable-next-line
 const swiper = new Swiper('.swiper', {
