@@ -1,7 +1,5 @@
-// Swiper 7.4.1
 import './vendor/swiper';
-import './vendor/focus-visible-polyfill';
-
+// import './vendor/swiper-bundle';
 import {initTabs} from './vendor/init-tabs';
 import {initAccordions} from './vendor/init-accordion';
 
@@ -9,11 +7,11 @@ initTabs();
 initAccordions();
 
 // eslint-disable-next-line
-const swiper = new Swiper('.swiper', {
+const swiperOne = new Swiper('.coaches__swiper', {
   direction: 'horizontal',
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.coaches__button-next',
+    prevEl: '.coaches__button-prev',
   },
   loop: true,
   slidesPerView: 1,
@@ -24,5 +22,18 @@ const swiper = new Swiper('.swiper', {
     1200: {
       slidesPerView: 4,
     },
+    spaceBetween: 40,
+  },
+});
+
+// eslint-disable-next-line
+const swiperTwo = new Swiper('.reviews__swiper', {
+  direction: 'horizontal',
+  slidesPerView: 1,
+  autoHeight: true,
+  centeredSlides: true,
+  navigation: {
+    nextEl: '.reviews__button-next',
+    prevEl: '.reviews__button-prev',
   },
 });

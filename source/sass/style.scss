@@ -2,9 +2,9 @@
 // ---------------------------------
 
 @import "vendor/normalize";
-// Swiper 7.4.1
-@import "vendor/swiper";
+@import "vendor/swiper.scss";
 
+// @import "vendor/swiper-bundle.scss";
 @import "vendor/data-tabs";
 @import "vendor/tabs";
 @import "vendor/data-accordion";
@@ -33,6 +33,7 @@
 @import "blocks/main-header";
 @import "blocks/main-footer";
 @import "blocks/hero";
+@import "blocks/title";
 @import "blocks/button";
 @import "blocks/gym";
 @import "blocks/play-button";
@@ -42,6 +43,10 @@
 @import "blocks/advantages";
 @import "blocks/special-offers";
 @import "blocks/faq";
+@import "blocks/reviews";
+@import "blocks/customer-communication";
+@import "blocks/free-training";
+@import "blocks/contacts";
 
 // ---------------------------------
 

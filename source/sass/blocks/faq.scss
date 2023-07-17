@@ -152,12 +152,14 @@ margin: 0;
 
 .faq__accordion-button {
   width: 42px;
+  min-width: 42px;
   height: 42px;
   border-radius: 50%;
   position: relative;
   border: 1px solid #1C3374;
   background-color: $color-default-white;
   box-sizing: border-box;
+  margin-left: 16px;
 
   &::before {
     position: absolute;

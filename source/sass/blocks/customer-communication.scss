@@ -1,0 +1,8 @@
+.customer-communication {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  @media (max-width: $bp-tablet-only) {
+    grid-template-columns: 100%;
+  }
+}
