@@ -64,23 +64,12 @@
 
   &:hover {
     border-bottom: 1px solid $color-default-white;
-    // &::before {
-    //   position: absolute;
-    //   content: '';
-    //   width: 78%;
-    //   height: 1px;
-    //   background-color: $color-default-white;
-    //   bottom: -1px;
-    //   left: 50%;
-    //   transform: translateX(-50%);
-    // }
   }
 
   &:focus {
-      // border: 1px solid $color-default-white;
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       top: -1px;
       right: -6px;
       bottom: -1px;

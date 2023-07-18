@@ -1,9 +1,6 @@
 .reviews {
   padding: 120px 0;
   background-color: $color-default-white;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
 }
 
 .reviews__container {
@@ -17,8 +14,7 @@
 }
 
 .reviews__post {
-  // width: 560px;
-  background-color: #1C3374;
+  background-color: #1c3374;
   position: relative;
   padding: 60px 60px 60px 170px;
 
@@ -28,8 +24,8 @@
 }
 
 .reviews__name {
-  color: #FFF;
-  font-family: 'Roboto Condensed', 'Arial', 'Helvetica', sans-serif;
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -43,8 +39,8 @@
 }
 
 .reviews__text {
-  color: #FFF;
-  font-family: 'Roboto Condensed', 'Arial', 'Helvetica', sans-serif;
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -66,7 +62,7 @@
 
 .reviews__button-prev {
   left: 340px;
-  color: #AFAFAF;
+  color: #afafaf;
 
   @media (max-width: $bp-tablet-only) {
     left: 30px;
@@ -83,7 +79,7 @@
 
 .reviews__button-next {
   right: 340px;
-  color: #AFAFAF;
+  color: #afafaf;
 
   @media (max-width: $bp-tablet-only) {
     right: 30px;

@@ -24,7 +24,7 @@
   }
 
   @media (max-width: $bp-mobile-only) {
-    grid-template-columns: 290px
+    grid-template-columns: 290px;
   }
 }
 
@@ -51,7 +51,7 @@
 
 .super-games__title {
   text-align: center;
-  font-family: 'Alumni Sans', 'Arial', 'Helvetica', sans-serif;
+  font-family: "Alumni Sans", "Arial", "Helvetica", sans-serif;
   font-size: 82px;
   font-style: normal;
   font-weight: 600;
@@ -65,7 +65,7 @@
 }
 
 .super-games__description {
-  font-family: 'Roboto Condensed', 'Arial', 'Helvetica', sans-serif;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -81,7 +81,7 @@
 
 .super-games__text {
   display: block;
-  font-family: 'Roboto Condensed', 'Arial', 'Helvetica', sans-serif;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -121,7 +121,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 64px;
     height: 1px;
     background-color: $color-default-white;
@@ -140,7 +140,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 88px;
     height: 1px;
     background-color: $color-default-white;
@@ -175,6 +175,3 @@
   display: flex;
   flex-direction: column;
 }
-
-
-

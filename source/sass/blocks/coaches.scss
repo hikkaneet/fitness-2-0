@@ -8,14 +8,14 @@
 }
 
 .coaches__title {
-font-family: 'Alumni Sans', 'Arial', 'Helvetica', sans-serif;
-font-size: 54px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: 1.62px;
-margin: 0;
-text-align: center;
+  font-family: "Alumni Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.62px;
+  margin: 0;
+  text-align: center;
 }
 
 .coaches__slider-wrapper {
@@ -47,18 +47,18 @@ text-align: center;
 }
 
 .coaches__name {
-color: #ffffff;
-font-family: 'Roboto Condensed', 'Arial', 'Helvetica', sans-serif;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 150%;
-position: absolute;
-bottom: 30px;
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  position: absolute;
+  bottom: 30px;
 
-&--hidden {
-  display: none;
-}
+  &--hidden {
+    display: none;
+  }
 }
 
 .coaches__more-info {
@@ -82,20 +82,20 @@ bottom: 30px;
 
 .coaches__info-name {
   color: #ffffff;
-font-family: 'Roboto Condensed', 'Arial', 'Helvetica', sans-serif;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 150%;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
 }
 
 .coaches__info-company {
-  color: #B6BDCC;
-  font-family: 'Roboto Condensed', 'Arial', 'Helvetica', sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 150%;
+  color: #b6bdcc;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 .coaches__info-list {
@@ -105,16 +105,16 @@ line-height: 150%;
 
 .coaches__info-item {
   color: #ffffff;
-  font-family: 'Roboto Condensed', 'Arial', 'Helvetica', sans-serif;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 150%;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 .coaches__button-prev {
   left: 50px;
-  color: #AFAFAF;
+  color: #afafaf;
 
   @media (max-width: $bp-mobile-only) {
     left: 20px;
@@ -127,7 +127,7 @@ line-height: 150%;
 
 .coaches__button-next {
   right: 50px;
-  color: #AFAFAF;
+  color: #afafaf;
 
   @media (max-width: $bp-mobile-only) {
     right: 20px;
@@ -137,4 +137,3 @@ line-height: 150%;
     }
   }
 }
-

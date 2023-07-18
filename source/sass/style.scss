@@ -3,8 +3,6 @@
 
 @import "vendor/normalize";
 @import "vendor/swiper.scss";
-
-// @import "vendor/swiper-bundle.scss";
 @import "vendor/data-tabs";
 @import "vendor/tabs";
 @import "vendor/data-accordion";
@@ -18,17 +16,11 @@
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
-@import "global/container";
 
 // Blocks
 // ---------------------------------
 
-@import "blocks/btn";
-@import "blocks/modal";
 @import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
-
 @import "blocks/page";
 @import "blocks/main-header";
 @import "blocks/main-footer";

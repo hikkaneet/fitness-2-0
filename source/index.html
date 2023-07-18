@@ -2,15 +2,20 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="fitness-2-0" content="Тренажёрный зал">
   <title>Fitness 2.0</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="./fonts/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/RobotoCondensed-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
+  <h1 class="visually-hidden">Главная страница</h1>
   <div class="page__container">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
@@ -25,7 +30,9 @@
       </a>
     </header>
     <main>
+
       <section class="hero">
+        <h2 class="visually-hidden">Hero-блок</h2>
         <div class="hero__container">
           <div class="hero__text-wrapper">
             <span
@@ -38,13 +45,13 @@
           <a class="hero__link button" href="#membership">Купить абонемент</a>
         </div>
         <picture class="hero__picture">
-          <!-- <source media="(min-width: 768px)" width="768" height="480" srcset="./img/hero-medium.webp 1x, ./img/hero-medium@2x.webp 2x" type="image/webp">
-                    <source srcset="./img/hero-large.webp 1x, ./img/hero-large@2x.webp 2x" type="image/webp"> -->
-          <source media="(max-width: 768px)" width="324" height="390"
-            srcset="./img/hero-medium.jpg 1x, ./img/hero-medium@2x.jpg 2x">
-          <img width="500" height="556" alt="123" src="./img/hero-large.jpg" srcset="./img/hero-large@2x.jpg 2x">
+          <source media="(max-width: 768px)" width="324" height="390" srcset="./img/hero-medium.webp 1x, ./img/hero-medium@2x.webp 2x" type="image/webp">
+          <source srcset="./img/hero-large.webp 1x, ./img/hero-large@2x.webp 2x" type="image/webp">
+          <source media="(max-width: 768px)" width="324" height="390" srcset="./img/hero-medium.jpg 1x, ./img/hero-medium@2x.jpg 2x">
+          <img width="500" height="556" alt="Герой фитнес-центра." src="./img/hero-large.jpg" srcset="./img/hero-large@2x.jpg 2x">
         </picture>
       </section>
+
       <section class="gym">
         <div class="gym__container">
           <h2 class="gym__title">Тренажерный зал</h2>
@@ -57,30 +64,26 @@
             для различных видов групповых занятий.</p>
         </div>
         <picture class="gym__picture">
-          <!-- <source media="(min-width: 320px)" width="320" height="313" srcset="./img/gym-large.webp 1x, ./img/gym-large@2x.webp 2x" type="image/webp">
-            <source media="(min-width: 768px)" width="678" height="345" srcset="./img/gym-medium.webp 1x, ./img/gym-medium@2x.webp 2x" type="image/webp">
-            <source srcset="./img/gym-small.webp 1x, ./img/gym-small@2x.webp 2x" type="image/webp"> -->
-          <source media="(max-width: 320px)" width="320" height="313"
-            srcset="./img/gym-small.jpg 1x, ./img/gym-small@2x.jpg 2x">
-          <source media="(max-width: 768px)" width="678" height="345"
-            srcset="./img/gym-medium.jpg 1x, ./img/gym-medium@2x.jpg 2x">
-          <img width="660" height="401" alt="123" src="./img/gym-large.jpg" srcset="./img/gym-large@2x.jpg 2x">
+          <source media="(max-width: 320px)" width="320" height="313" srcset="./img/gym-small.webp 1x, ./img/gym-small@2x.webp 2x" type="image/webp">
+          <source media="(max-width: 768px)" width="678" height="345" srcset="./img/gym-medium.webp 1x, ./img/gym-medium@2x.webp 2x" type="image/webp">
+          <source srcset="./img/gym-large.webp 1x, ./img/gym-large@2x.webp 2x" type="image/webp">
+          <source media="(max-width: 320px)" width="320" height="313" srcset="./img/gym-small.jpg 1x, ./img/gym-small@2x.jpg 2x">
+          <source media="(max-width: 768px)" width="678" height="345" srcset="./img/gym-medium.jpg 1x, ./img/gym-medium@2x.jpg 2x">
+          <img width="660" height="401" alt="Фото зала." src="./img/gym-large.jpg" srcset="./img/gym-large@2x.jpg 2x">
         </picture>
         <div class="gym__video">
           <picture class="gym__video-preview">
-            <!-- <source media="(min-width: 320px)" width="320" height="167" srcset="./img/video-preview-large.webp 1x, ./img/video-preview-large@2x.webp 2x" type="image/webp">
-            <source media="(min-width: 768px)" width="266" height="167" srcset="./img/video-preview-medium.webp 1x, ./img/video-preview-medium@2x.webp 2x" type="image/webp">
-            <source srcset="./img/video-preview-small.webp 1x, ./img/video-preview-small@2x.webp 2x" type="image/webp"> -->
-            <source media="(max-width: 320px)" width="320" height="167"
-              srcset="./img/video-preview-small.jpg 1x, ./img/video-preview-small@2x.jpg 2x">
-            <source media="(max-width: 768px)" width="266" height="167"
-              srcset="./img/video-preview-medium.jpg 1x, ./img/video-preview-medium@2x.jpg 2x">
-            <img width="364" height="228" alt="123" src="./img/video-preview-large.jpg"
-              srcset="./img/video-preview-large@2x.jpg 2x">
+            <source media="(max-width: 320px)" width="320" height="167" srcset="./img/video-preview-small.webp 1x, ./img/video-preview-small@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 768px)" width="266" height="167" srcset="./img/video-preview-medium.webp 1x, ./img/video-preview-medium@2x.webp 2x" type="image/webp">
+            <source srcset="./img/video-preview-large.webp 1x, ./img/video-preview-large@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 320px)" width="320" height="167" srcset="./img/video-preview-small.jpg 1x, ./img/video-preview-small@2x.jpg 2x">
+            <source media="(max-width: 768px)" width="266" height="167" srcset="./img/video-preview-medium.jpg 1x, ./img/video-preview-medium@2x.jpg 2x">
+            <img width="364" height="228" alt="Превью видео." src="./img/video-preview-large.jpg" srcset="./img/video-preview-large@2x.jpg 2x">
           </picture>
           <button class="play-button"></button>
         </div>
       </section>
+
       <section class="membership tabs" data-tabs="parent">
         <h2 class="membership__title">Абонементы</h2>
         <ul class="membership__tabs-wrapper tabs__controls" data-tabs="controls">
@@ -261,6 +264,7 @@
         <img class="membership__decor" width="321" height="384" src="./img/membership-decor.png" alt="ганели">
       </section>
       <section class="super-games">
+        <h2 class="visually-hidden">Promo-блок</h2>
         <div class="super-games__container">
           <div class="super-games__content-wrapper">
             <div class="super-games__info">
@@ -929,7 +933,7 @@
                     чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет
                     очередей&raquo;
                   </p>
-                  <img class="reviews__avatar" src="./img/review-1-avatar.png">
+                  <img class="reviews__avatar" src="./img/review-1-avatar.png" alt="Аватар пользователя.">
                 </div>
               </div>
               <div class="swiper-slide">
@@ -943,7 +947,7 @@
                     euismod&nbsp;eu. Aliquam quis venenatis orci, in&nbsp;viverra erat. Nam finibus condimentum urna,
                     consectetur luctus sem viverra vel. Pellentesque venenatis et&nbsp;ante ornare.
                   </p>
-                  <img class="reviews__avatar" src="./img/review-1-avatar.png">
+                  <img class="reviews__avatar" src="./img/review-1-avatar.png" alt="Аватар пользователя.">
                 </div>
               </div>
               <div class="swiper-slide">
@@ -976,7 +980,7 @@
                     feugiat nunc.
                     Aliquam pellentesque mauris vitae neque maximus euismod.
                   </p>
-                  <img class="reviews__avatar" src="./img/review-1-avatar.png">
+                  <img class="reviews__avatar" src="./img/review-1-avatar.png" alt="Аватар пользователя.">
                 </div>
               </div>
             </div>
@@ -991,14 +995,18 @@
           <h2 class="free-training__title title">Бесплатное занятие</h2>
           <form class="free-training__form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="free-training__form-container">
-              <div class="free-training__input-wrapper custom-input" data-validate-type="text" data-limitation="name" data-message-base="Заполни" data-message-extra="Исправь" data-required>
+              <div class="free-training__input-wrapper custom-input" data-validate-type="text" data-limitation="name"
+                data-message-base="Заполни" data-message-extra="Исправь" data-required>
                 <label>
-                  <input class="free-training__input type="text" name="customer-name" placeholder="Имя" required maxlength="32" autocomplete="off">
+                  <input class="free-training__input" type="text" name="customer-name" placeholder="Имя" required
+                    maxlength="32" autocomplete="off">
                 </label>
               </div>
-              <div class="free-training__input-wrapper custom-input" data-validate-type="phone" data-on-input-validate data-message-base="Заполни" data-message-extra="Исправь" data-message-success="Всё ОК" data-required>
+              <div class="free-training__input-wrapper custom-input" data-validate-type="phone" data-on-input-validate
+                data-message-base="Заполни" data-message-extra="Исправь" data-message-success="Всё ОК" data-required>
                 <label>
-                  <input class="free-training__input type="tel" name="customer-phone" placeholder="Телефон" required maxlength="24" autocomplete="off">
+                  <input class="free-training__input" type="tel" name="customer-phone" placeholder="Телефон" required
+                    maxlength="24" autocomplete="off">
                 </label>
               </div>
             </div>
