@@ -1,11 +1,11 @@
 .super-games__container {
   background-color: $color-default-white;
-  padding: 120px 0 20px;
+  padding: 0 0 20px;
   display: flex;
   justify-content: center;
 
   @media (max-width: $bp-tablet-only) {
-    padding: 100px 0 20px;
+    padding: 20px 0;
   }
 
   @media (max-width: $bp-mobile-only) {
@@ -174,4 +174,10 @@
 .super-games__details {
   display: flex;
   flex-direction: column;
+}
+
+super-games__image {
+  & img {
+    width: 100%;
+  }
 }

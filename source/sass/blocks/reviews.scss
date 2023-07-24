@@ -1,6 +1,10 @@
 .reviews {
-  padding: 120px 0;
+  padding: 92px 0;
   background-color: $color-default-white;
+
+  @media (max-width: $bp-tablet-only) {
+    padding: 92px 0 76px;
+  }
 }
 
 .reviews__container {
@@ -16,7 +20,7 @@
 .reviews__post {
   background-color: #1c3374;
   position: relative;
-  padding: 60px 60px 60px 170px;
+  padding: 54px 60px 40px 176px;
 
   @media (max-width: $bp-mobile-only) {
     padding: 40px 24px;

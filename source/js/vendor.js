@@ -18,12 +18,14 @@ const swiperOne = new Swiper('.coaches__swiper', {
   breakpoints: {
     768: {
       slidesPerView: 2,
+      spaceBetween: 40,
     },
     1200: {
       slidesPerView: 4,
+      spaceBetween: 40,
     },
-    spaceBetween: 40,
   },
+  autoHeight: true,
 });
 
 // eslint-disable-next-line

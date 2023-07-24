@@ -6,7 +6,7 @@
   align-items: center;
 
   @media (max-width: $bp-tablet-only) {
-    padding: 100px 0;
+    padding: 86px 0;
   }
 
   @media (max-width: $bp-mobile-only) {
@@ -39,14 +39,15 @@
   margin-top: 54px;
   display: grid;
   grid-template-columns: 340px 260px 340px;
-  column-gap: 60px;
-  row-gap: 166px;
+  column-gap: 40px;
+  row-gap: 136px;
   position: relative;
 
   @media (max-width: $bp-tablet-only) {
     grid-template-columns: 310px 310px;
     column-gap: 50px;
     row-gap: 40px;
+    margin-top: 42px;
   }
 
   @media (max-width: $bp-mobile-only) {
@@ -94,18 +95,21 @@
 
 .advantages__item-number {
   display: block;
-  background-color: #102654;
-  background-image: $additional-gradient-color;
-  background-clip: text;
-  color: transparent;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 70px;
   font-style: normal;
   font-weight: 700;
   line-height: 1;
 
-  @media (max-width: $bp-tablet-only) {
-    font-size: 58px;
+  &--colored {
+    background-image: $additional-gradient-color;
+    background-clip: text;
+    color: transparent;
+    background-color: #102654;
+
+    @media (max-width: $bp-tablet-only) {
+      font-size: 58px;
+    }
   }
 }
 
@@ -147,6 +151,10 @@
   display: flex;
   column-gap: 30px;
 
+  @media (max-width: $bp-tablet-only) {
+    column-gap: 20px;
+  }
+
   @media (max-width: $bp-mobile-only) {
     flex-direction: column;
     align-items: center;
@@ -187,15 +195,15 @@
       grid-column-end: 3;
       grid-row-start: 2;
       grid-row-end: 3;
-      margin: 0 108px;
-      padding: 44px 124px;
+      margin: 0 126px;
+      padding: 36px 124px;
 
       & .advantages__item-name {
-        margin-top: 20px;
+        margin-top: 2px;
       }
 
       & .advantages__item-description {
-        margin-top: 30px;
+        margin-top: 18px;
       }
     }
 

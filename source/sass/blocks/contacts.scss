@@ -2,7 +2,7 @@
   padding: 70px 20px 70px 120px;
 
   @media (max-width: $bp-tablet-only) {
-    padding: 70px 132px;
+    padding: 64px 100px 64px 136px;
   }
 
   @media (max-width: $bp-mobile-only) {
@@ -27,8 +27,8 @@
 
 .contacts__list {
   list-style-type: none;
-  margin: 0;
-  padding: 50px 0 0;
+  margin: 32px 0 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 120px;

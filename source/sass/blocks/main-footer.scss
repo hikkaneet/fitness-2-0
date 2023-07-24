@@ -7,12 +7,12 @@
   min-height: 108px;
   background-color: $color-black-russian;
 
-  @media (max-width: $bp-tablet) {
+  @media (max-width: $bp-tablet-only) {
     padding: 0 44px;
     min-height: 114px;
   }
 
-  @media (max-width: $bp-mobile) {
+  @media (max-width: $bp-mobile-only) {
     padding: 50px 16px;
     min-height: 200px;
   }
@@ -31,7 +31,7 @@
   position: relative;
   padding-left: 88px;
 
-  @media (max-width: $bp-tablet) {
+  @media (max-width: $bp-mobile-only) {
     padding-left: 82px;
   }
 

@@ -1,8 +1,17 @@
 .membership {
-  padding: 120px 6%;
+  padding: 120px 6% 244px;
   background-color: $color-ghost-white;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 90px;
+  background-position: bottom center;
+
+  @media (max-width: $bp-tablet-only) {
+    padding: 102px 6% 180px;
+    background-size: 100% 80px;
+  }
 }
 
 .membership__title {
@@ -15,6 +24,11 @@
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.62px;
+
+  @media (max-width: $bp-tablet-only) {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+  }
 }
 
 .membership__tabs-wrapper {
@@ -35,7 +49,7 @@
     }
 
     @media screen and (max-width: $bp-mobile-only) {
-      width: 280px;
+      width: 254px;
     }
   }
 }
@@ -63,7 +77,7 @@
   flex-direction: column;
   align-items: center;
   width: 24vw;
-  padding: 5vw 0;
+  padding: 46px 0;
   position: relative;
   border: 7px solid $color-default-white;
 
@@ -73,6 +87,7 @@
 
   @media (max-width: $bp-tablet-only) {
     width: 58vw;
+    padding: 52px 0 60px;
   }
 
   @media (max-width: $bp-mobile-only) {
@@ -98,6 +113,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+
+  @media (max-width: $bp-tablet-only) {
+    margin-top: 12px;
+  }
 }
 
 .membership__card-price-wrapper {
@@ -106,7 +125,7 @@
 
 .membership__card-price {
   display: block;
-  margin-top: 96px;
+  margin-top: 54px;
   color: #103aae;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 60px;
@@ -114,6 +133,10 @@
   font-weight: 700;
   line-height: 150%;
   position: relative;
+
+  @media (max-width: $bp-tablet-only) {
+    margin-top: 64px;
+  }
 }
 
 .membership__card-price-shadow {
@@ -126,10 +149,14 @@
   position: absolute;
   top: 42px;
   left: -20px;
+
+  @media (max-width: $bp-tablet-only) {
+    top: 10px;
+  }
 }
 
 .membership__button {
-  margin-top: 60px;
+  margin-top: 36px;
   padding: 28px 44px;
   box-sizing: border-box;
   color: #102654;
@@ -140,11 +167,21 @@
   line-height: normal;
   letter-spacing: 0.6px;
   text-transform: uppercase;
+
+  @media (max-width: $bp-tablet-only) {
+    padding: 24px 44px;
+  }
 }
 
 .membership__decor {
   position: absolute;
   transform: rotate(150deg);
   right: -110px;
-  bottom: -90px;
+  bottom: 0;
+
+  @media (max-width: $bp-tablet-only) {
+    right: -10px;
+    bottom: 0;
+    width: 290px;
+  }
 }

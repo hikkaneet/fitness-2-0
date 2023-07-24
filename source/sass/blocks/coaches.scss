@@ -1,9 +1,9 @@
 .coaches {
-  padding: 30px 0 104px;
+  padding: 86px 0 104px;
   position: relative;
 
   @media (max-width: $bp-tablet-only) {
-    padding: 30px 0 100px;
+    padding: 84px 0 100px;
   }
 }
 
@@ -15,14 +15,25 @@
   line-height: normal;
   letter-spacing: 1.62px;
   margin: 0;
-  text-align: center;
+  padding: 0 8%;
+
+  @media (max-width: $bp-tablet-only) {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    text-align: center;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+  }
 }
 
 .coaches__slider-wrapper {
-  margin: 48px 102px 0 142px;
+  margin: 48px 102px 0;
 
   @media (max-width: $bp-tablet-only) {
-    margin: 30px 100px 0 140px;
+    margin: 30px 100px 0;
   }
 
   @media (max-width: $bp-mobile-only) {
@@ -35,15 +46,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 260px;
-
-  @media (max-width: $bp-tablet-only) {
-    width: 268px;
-  }
 }
 
 .coaches__photo {
   object-fit: cover;
+  width: 100%;
+  height: auto;
+
+  & img {
+    width: 100%;
+
+    @media (max-width: $bp-mobile-only) {
+      width: 80%;
+      padding-left: 20%;
+    }
+  }
 }
 
 .coaches__name {
@@ -76,7 +93,9 @@
   }
 
   @media (max-width: $bp-mobile-only) {
-    padding: 58px 40px;
+    width: 60%;
+    padding: 6%;
+    overflow: scroll;
   }
 }
 
@@ -113,7 +132,8 @@
 }
 
 .coaches__button-prev {
-  left: 50px;
+  top: 55%;
+  left: 42px;
   color: #afafaf;
 
   @media (max-width: $bp-mobile-only) {
@@ -126,7 +146,8 @@
 }
 
 .coaches__button-next {
-  right: 50px;
+  top: 55%;
+  right: 42px;
   color: #afafaf;
 
   @media (max-width: $bp-mobile-only) {

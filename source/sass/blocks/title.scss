@@ -9,4 +9,15 @@
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.62px;
+
+  @media (max-width: $bp-tablet-only) {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    text-align: center;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+  }
 }

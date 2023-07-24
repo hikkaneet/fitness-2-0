@@ -1,6 +1,7 @@
 .page__container {
   height: 100%;
-  max-width: 100%;
+  min-width: $bp-mobile;
+  max-width: $bp-max-limiter;
   margin-left: auto;
   margin-right: auto;
   display: flex;

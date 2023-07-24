@@ -128,7 +128,7 @@
   letter-spacing: 4.6px;
   text-transform: uppercase;
 
-  @media (max-width: $bp-tablet) {
+  @media (max-width: $bp-mobile-only) {
     font-size: 72px;
     line-height: 86px;
     letter-spacing: 3.6px;
@@ -145,7 +145,7 @@
   line-height: 76px;
   letter-spacing: 2.46px;
 
-  @media (max-width: $bp-tablet) {
+  @media (max-width: $bp-mobile-only) {
     font-size: 48px;
     line-height: 46px;
     letter-spacing: 1.44px;
@@ -161,7 +161,7 @@
   line-height: 54px;
   letter-spacing: 1.62px;
 
-  @media (max-width: $bp-tablet) {
+  @media (max-width: $bp-mobile-only) {
     text-align: center;
     font-size: 42px;
     line-height: 42px;
@@ -183,7 +183,7 @@
   font-weight: 700;
   line-height: 26px;
 
-  @media (max-width: $bp-tablet) {
+  @media (max-width: $bp-mobile-only) {
     text-align: center;
   }
 }
@@ -196,7 +196,7 @@
   font-weight: 500;
   line-height: 24px;
 
-  @media (max-width: $bp-tablet) {
+  @media (max-width: $bp-mobile-only) {
     line-height: 26px;
   }
 
@@ -215,7 +215,7 @@
   font-weight: 700;
   line-height: 22px;
 
-  @media (max-width: $bp-tablet) {
+  @media (max-width: $bp-mobile-only) {
     font-size: 20px;
     line-height: 20px;
   }
@@ -275,7 +275,7 @@
   font-weight: 400;
   line-height: 20px;
 
-  @media (max-width: $bp-tablet) {
+  @media (max-width: $bp-mobile-only) {
     font-size: 18px;
     line-height: 18px;
   }
@@ -373,7 +373,7 @@
   font-weight: 700;
   line-height: 40px;
 
-  @media (max-width: $bp-tablet) {
+  @media (max-width: $bp-mobile-only) {
     font-size: 24px;
     line-height: 24px;
   }
