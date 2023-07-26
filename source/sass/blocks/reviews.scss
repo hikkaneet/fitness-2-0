@@ -73,15 +73,15 @@
 }
 
 .reviews__button-prev {
-  left: 340px;
+  left: 24%;
   color: #afafaf;
 
   @media (max-width: $bp-tablet-only) {
-    left: 30px;
+    left: 6%;
   }
 
   @media (max-width: $bp-mobile-only) {
-    left: 8px;
+    left: 4%;
 
     &::after {
       font-size: 22px;
@@ -90,15 +90,15 @@
 }
 
 .reviews__button-next {
-  right: 340px;
+  right: 24%;
   color: #afafaf;
 
   @media (max-width: $bp-tablet-only) {
-    right: 30px;
+    right: 6%;
   }
 
   @media (max-width: $bp-mobile-only) {
-    right: 8px;
+    right: 4%;
 
     &::after {
       font-size: 22px;

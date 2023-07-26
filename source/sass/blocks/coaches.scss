@@ -81,6 +81,7 @@
   line-height: 150%;
   position: absolute;
   bottom: 30px;
+  overflow-wrap: anywhere;
 
   &--hidden {
     display: none;
@@ -119,6 +120,7 @@
   font-weight: 700;
   line-height: 150%;
   text-align: center;
+  overflow-wrap: anywhere;
 }
 
 .coaches__info-company {
@@ -128,6 +130,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  overflow-wrap: anywhere;
 }
 
 .coaches__info-list {

@@ -172,6 +172,8 @@
     padding: 10px 36px;
     margin-top: 20px;
   }
+
+  @include focus-visible;
 }
 
 .super-games__details {

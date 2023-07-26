@@ -135,6 +135,7 @@
   font-weight: 700;
   line-height: 150%;
   position: relative;
+  overflow-wrap: anywhere;
 
   @media (max-width: $bp-tablet-only) {
     margin-top: 64px;
@@ -171,6 +172,8 @@
   letter-spacing: 0.6px;
   text-transform: uppercase;
 
+  @include focus-visible;
+
   @media (max-width: $bp-tablet-only) {
     padding: 24px 44px;
   }
@@ -191,4 +194,9 @@
   @media (max-width: $bp-mobile-only) {
     display: none;
   }
+}
+
+.membership__card-list {
+  flex-wrap: wrap;
+  row-gap: 40px;
 }

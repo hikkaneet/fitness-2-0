@@ -125,6 +125,8 @@
     width: 100%;
     text-align: center;
   }
+
+  @include focus-visible;
 }
 
 .hero__picture {

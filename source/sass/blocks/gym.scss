@@ -111,6 +111,7 @@
 
 .gym__picture {
   position: relative;
+  height: fit-content;
 
   @media (max-width: $bp-tablet-only) {
     margin-top: 42px;
