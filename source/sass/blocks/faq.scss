@@ -7,6 +7,12 @@
   }
 }
 
+.faq__wrapper {
+  max-width: $bp-max-limiter;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .faq__title {
   color: #102654;
   font-family: "Alumni Sans", "Arial", "Helvetica", sans-serif;
@@ -65,6 +71,7 @@
   width: 260px;
   padding: 18px 0;
   border: 1px solid rgba(16, 38, 84, 0.2);
+  user-select: none;
 
   &:hover {
     border: 1px solid #102654;

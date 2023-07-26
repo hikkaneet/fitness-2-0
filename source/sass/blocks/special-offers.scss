@@ -1,16 +1,16 @@
 .special-offers {
   background-color: $color-default-white;
-  padding: 128px 0 120px;
+  padding: 128px 6% 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (max-width: $bp-tablet-only) {
-    padding: 92px 0;
+    padding: 92px 6%;
   }
 
   @media (max-width: $bp-mobile-only) {
-    padding: 70px 0;
+    padding: 70px 6%;
   }
 }
 
@@ -37,14 +37,14 @@
 }
 
 .special-offers__container {
+  max-width: $bp-max-limiter;
+  width: 100%;
   margin-top: 34px;
-  padding: 0 6%;
   display: grid;
-  grid-template-columns: 560px 560px;
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 
   @media (max-width: $bp-tablet-only) {
-    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     margin-top: 46px;
   }
@@ -150,12 +150,13 @@
   letter-spacing: 0.6px;
   text-transform: uppercase;
   position: relative;
+  width: fit-content;
 
   &::before {
     position: absolute;
     content: "";
     height: 1px;
-    width: 80px;
+    width: 100%;
     background-color: #1c3374;
     left: 0;
     bottom: -4px;
@@ -173,6 +174,7 @@
 }
 
 .special-offers__major-picture {
+  background-color: #4f83e2;
   max-width: none;
 
   & img {

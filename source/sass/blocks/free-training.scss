@@ -1,13 +1,18 @@
 .free-training {
-  padding: 70px 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  padding: 70px 8% 70px 20px;
   background-color: $color-sapphire;
 
   @media (max-width: $bp-tablet-only) {
-    padding: 60px 136px;
+    padding: 60px 18%;
+    align-items: center;
   }
 
   @media (max-width: $bp-mobile-only) {
-    padding: 70px 14px;
+    padding: 70px 4%;
   }
 }
 

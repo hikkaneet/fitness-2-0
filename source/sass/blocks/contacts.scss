@@ -1,12 +1,17 @@
 .contacts {
-  padding: 70px 20px 70px 120px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 70px 20px 70px 9%;
 
   @media (max-width: $bp-tablet-only) {
-    padding: 64px 100px 64px 136px;
+    padding: 64px 100px 64px 16%;
+    align-items: center;
   }
 
   @media (max-width: $bp-mobile-only) {
-    padding: 70px 14px;
+    padding: 70px 4%;
   }
 }
 
@@ -49,8 +54,9 @@
     width: 1px;
     height: 102px;
     background-color: #74819c;
-    top: 56px;
+    top: 50%;
     left: 50%;
+    transform: translateY(-50%);
 
     @media (max-width: $bp-mobile-only) {
       display: none;

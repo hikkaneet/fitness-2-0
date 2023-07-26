@@ -378,3 +378,9 @@
     line-height: 24px;
   }
 }
+
+@mixin centred-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,8 +1,7 @@
 .hero {
-  padding: 50px 21% 50px 10%;
+  @include centred-flex;
+  padding: 50px 10%;
   background: $main-screen-gradient;
-  display: flex;
-  justify-content: space-between;
 
   @media (max-width: $bp-tablet-only) {
     padding: 82px 6%;
@@ -10,6 +9,21 @@
 
   @media (max-width: $bp-mobile-only) {
     padding: 114px 4% 80px;
+    justify-content: center;
+  }
+}
+
+.hero__wrapper {
+  margin-right: 11%;
+  max-width: $bp-max-limiter;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $bp-tablet-only) {
+    margin-right: 0;
+  }
+
+  @media (max-width: $bp-mobile-only) {
     justify-content: center;
   }
 }
@@ -84,11 +98,11 @@
     margin-right: 5px;
 
     @media (max-width: $bp-tablet-only) {
-    padding-top: 186px;
+      padding-top: 186px;
     }
 
     @media (max-width: $bp-mobile-only) {
-      margin-right: -10px;
+      margin-right: -24px;
     }
   }
 }
@@ -105,17 +119,18 @@
   @media (max-width: $bp-tablet-only) {
     margin-top: 34px;
     padding: 20px 32px;
-    }
+  }
 
-  @media (max-width: $bp-mobile) {
-    padding: 25px 25%;
-    margin-left: auto;
-    margin-right: auto;
+  @media (max-width: $bp-mobile-only) {
+    width: 100%;
+    text-align: center;
   }
 }
 
 .hero__picture {
-  @media (max-width: $bp-mobile) {
+  background-color: #04072a;
+
+  @media (max-width: $bp-mobile-only) {
     display: none;
   }
 }

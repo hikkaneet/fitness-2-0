@@ -1,6 +1,5 @@
 .gym {
-  display: flex;
-  justify-content: space-between;
+  @include centred-flex;
   gap: 6%;
   padding: 120px 6% 234px 12%;
   position: relative;
@@ -12,9 +11,19 @@
   }
 
   @media (max-width: $bp-mobile-only) {
-    flex-direction: column;
     gap: 0;
     padding: 70px 0;
+  }
+}
+
+.gym__wrapper {
+  max-width: $bp-max-limiter;
+  display: flex;
+  justify-content: space-between;
+  gap: 8%;
+
+  @media (max-width: $bp-tablet-only) {
+    flex-direction: column;
   }
 }
 
@@ -88,6 +97,7 @@
 
   @media (max-width: $bp-mobile-only) {
     text-align: left;
+    padding: 0;
   }
 
   &--hidden {
@@ -105,9 +115,15 @@
   @media (max-width: $bp-tablet-only) {
     margin-top: 42px;
   }
+
+  & img {
+    width: 100%;
+    background-color: #dcdfea;
+  }
 }
 
 .gym__video {
+  background-color: #dcdfea;
   position: absolute;
   top: 72%;
   left: -10%;

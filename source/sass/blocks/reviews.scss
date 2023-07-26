@@ -1,10 +1,16 @@
 .reviews {
+  @include centred-flex;
   padding: 92px 0;
   background-color: $color-default-white;
 
   @media (max-width: $bp-tablet-only) {
     padding: 92px 0 76px;
   }
+}
+
+.reviews__wrapper {
+  max-width: $bp-max-limiter;
+  width: 100%;
 }
 
 .reviews__container {
@@ -52,6 +58,8 @@
 }
 
 .reviews__avatar {
+  background-color: #5b606b;
+  border-radius: 50%;
   position: absolute;
   top: 60px;
   left: 60px;

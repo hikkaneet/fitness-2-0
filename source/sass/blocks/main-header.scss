@@ -1,10 +1,8 @@
 .main-header {
+  flex-grow: 0;
+  flex-shrink: 0;
   position: absolute;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
   padding: 30px 6% 30px 8%;
 
   @media (max-width: $bp-tablet-only) {
@@ -16,9 +14,20 @@
   }
 }
 
+.main-header__wrapper {
+  max-width: $bp-max-limiter;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .main-header__logo {
   cursor: pointer;
   padding-top: 8px;
+  user-select: none;
 }
 
 .main-header__phone {
