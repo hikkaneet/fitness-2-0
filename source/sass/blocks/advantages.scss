@@ -162,7 +162,7 @@
   font-weight: 300;
   line-height: 140%;
   max-height: 120px;
-  overflow: scroll;
+  overflow: auto;
 
   @media (max-width: $bp-tablet-only) {
     margin: 3px 0 0 9px;
