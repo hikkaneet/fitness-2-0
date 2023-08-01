@@ -10,6 +10,8 @@
   line-height: normal;
   letter-spacing: 0.6px;
   text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
 
   &:hover,
   &:focus {
@@ -27,17 +29,19 @@
   }
 
   &--alt {
-    border: 2px solid $color-sapphire;
+    border: 0;
+    outline: 2px solid $color-sapphire;
+    outline-offset: 0;
 
     &:hover,
     &:focus {
-      border: 0;
+      outline: 0;
       color: $color-default-white;
       background: $button-gradient;
     }
 
     &:active {
-      border: 0;
+      outline: 0;
       color: rgba($color-default-white, 0.7);
       background: $button-gradient;
     }

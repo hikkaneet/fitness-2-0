@@ -1,10 +1,9 @@
 .hero {
-  @include centred-flex;
-  padding: 50px 10%;
+  padding: 50px 10% 51px 8%;
   background: $main-screen-gradient;
 
   @media (max-width: $bp-tablet-only) {
-    padding: 82px 6%;
+    padding: 82px 6% 82px 5%;
   }
 
   @media (max-width: $bp-mobile-only) {
@@ -14,7 +13,7 @@
 }
 
 .hero__wrapper {
-  margin-right: 11%;
+  margin-right: 15%;
   max-width: $bp-max-limiter;
   display: flex;
   justify-content: space-between;
@@ -32,10 +31,17 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin: 0 0 0 11px;
   margin-right: 5%;
 
+  @media (max-width: $bp-tablet-only) {
+    margin: 0 4% 0 7px;
+  }
+
   @media (max-width: $bp-mobile-only) {
-    margin-right: 0;
+    margin: 0;
+    width: 100%;
+    align-items: center;
   }
 }
 
@@ -49,6 +55,10 @@
 
   @media (max-width: $bp-tablet-only) {
     margin-left: 14px;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    margin-left: 0;
   }
 }
 
@@ -71,6 +81,12 @@
       font-size: 34px;
       letter-spacing: 1.02px;
     }
+
+    @media (max-width: $bp-mobile-only) {
+      margin: 0 4px 0 0;
+      font-size: 28px;
+      letter-spacing: 0.84px;
+    }
   }
 
   &--place {
@@ -82,27 +98,34 @@
     line-height: normal;
     letter-spacing: 4.6px;
     color: $color-default-white;
-    margin-top: 30px;
+    margin: 30px 0 0 16px;
+    text-transform: uppercase;
 
     @media (max-width: $bp-tablet-only) {
       font-size: 72px;
       letter-spacing: 3.6px;
-      margin-top: 16px;
+      margin: 14px 0 0 10px;
+      text-transform: none;
+    }
+
+    @media (max-width: $bp-mobile-only) {
+      margin: 16px 0 0 16px;
     }
   }
 
   &--additional {
     @include text-small;
     color: $color-default-white;
-    padding-top: 306px;
-    margin-right: 5px;
+    margin: 306px 0 0 3px;
+    word-wrap: break-word;
 
     @media (max-width: $bp-tablet-only) {
-      padding-top: 186px;
+      margin: 186px 0 0 0;
     }
 
     @media (max-width: $bp-mobile-only) {
-      margin-right: -24px;
+      margin: 118px -24px 0 0;
+      max-width: 120px;
     }
   }
 }
@@ -112,18 +135,20 @@
 
   @include buttons-regular;
   color: $color-default-white;
-  margin-top: 50px;
+  margin-top: 48px;
   padding: 20px 56px;
 
 
   @media (max-width: $bp-tablet-only) {
-    margin-top: 34px;
-    padding: 20px 32px;
+    margin-top: 36px;
+    padding: 20px 30px;
   }
 
   @media (max-width: $bp-mobile-only) {
     width: 100%;
     text-align: center;
+    margin-top: 24px;
+    padding: 20px 8%;
   }
 
   @include focus-visible;

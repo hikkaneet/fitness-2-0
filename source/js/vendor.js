@@ -7,15 +7,15 @@ const initCoachesSwiper = () => {
   const coachesSwiper = new Swiper('.coaches__swiper', {
     direction: 'horizontal',
     navigation: {
-      nextEl: '.coaches__button-next',
-      prevEl: '.coaches__button-prev',
+      nextEl: '.coaches__button--next',
+      prevEl: '.coaches__button--prev',
     },
     loop: true,
     slidesPerView: 1,
     breakpoints: {
       768: {
         slidesPerView: 2,
-        spaceBetween: 40,
+        spaceBetween: 30,
       },
       1200: {
         slidesPerView: 4,
@@ -53,8 +53,8 @@ const initReviewsSwiper = () => {
     autoHeight: true,
     centeredSlides: true,
     navigation: {
-      nextEl: '.reviews__button-next',
-      prevEl: '.reviews__button-prev',
+      nextEl: '.reviews__button--next',
+      prevEl: '.reviews__button--prev',
     },
   });
 };

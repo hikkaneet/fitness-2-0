@@ -13,6 +13,11 @@
   <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/RobotoCondensed-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 </head>
 
 <body>
@@ -20,16 +25,18 @@
   <div class="page__container">
     <header class="main-header">
       <div class="main-header__wrapper">
-        <a class="main-header__logo" href="index.html">
+        <a class="main-header__logo link" href="index.html">
           <picture>
             <source media="(max-width: 320px)" width="69" height="13" srcset="./img/svg/logo.svg">
-            <source media="(max-width: 767px)" width="82" height="16" srcset="./img/svg/logo.svg">
-            <img src="./img/svg/logo.svg" width="122" height="24" alt="Логотип">
+            <source media="(max-width: 768px)" width="82" height="16" srcset="./img/svg/logo.svg">
+            <img src="./img/svg/logo.svg" width="119" height="24" alt="Логотип">
           </picture>
         </a>
-        <a class="main-header__phone" href="tel:88005555555">
-          8-800-555-55-55
-        </a>
+        <div class="main-header__link-wrapper">
+          <a class="main-header__phone link" href="tel:88005555555">
+            8-800-555-55-55
+          </a>
+        </div>
       </div>
     </header>
     <main class="main-container">
@@ -42,18 +49,21 @@
               <span
                 class="hero__text hero__text--additional">Тренажёрный&nbsp;зал<br>Групповые&nbsp;занятия<br>Кардио-зона</span>
               <div class="hero__main-text-wrapper">
-                <span class="hero__text hero__text--city">Омск</span>
-                <span class="hero__text hero__text--place">ФИТНЕС<br>ЦЕНТР</span>
+                <span class="hero__text hero__text--city">омск</span>
+                <span class="hero__text hero__text--place">Фитнес<br>центр</span>
               </div>
             </div>
             <a class="hero__link button" href="#membership">Купить абонемент</a>
           </div>
           <div class="hero__picture">
             <picture>
-              <source media="(max-width: 767px)" width="324" height="390" srcset="./img/hero-medium.webp 1x, ./img/hero-medium@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 768px)" width="324" height="390"
+                srcset="./img/hero-medium.webp 1x, ./img/hero-medium@2x.webp 2x" type="image/webp">
               <source srcset="./img/hero-large.webp 1x, ./img/hero-large@2x.webp 2x" type="image/webp">
-              <source media="(max-width: 767px)" width="324" height="390" srcset="./img/hero-medium.jpg 1x, ./img/hero-medium@2x.jpg 2x">
-              <img width="500" height="556" alt="Герой фитнес-центра." src="./img/hero-large.jpg" srcset="./img/hero-large@2x.jpg 2x">
+              <source media="(max-width: 768px)" width="324" height="390"
+                srcset="./img/hero-medium.jpg 1x, ./img/hero-medium@2x.jpg 2x">
+              <img width="500" height="556" alt="Герой фитнес-центра." src="./img/hero-large.jpg"
+                srcset="./img/hero-large@2x.jpg 2x">
             </picture>
           </div>
         </div>
@@ -68,28 +78,46 @@
               место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным
               оборудованием для всех спортсменов.</p>
             <p class="gym__description gym__description--hidden">В&nbsp;зале расположены отдельная зона для Crossfit
-              и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов
+              и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных
+              залов
               для различных видов групповых занятий.</p>
           </div>
           <div class="gym__picture">
             <picture>
-              <source media="(max-width: 320px)" width="320" height="313" srcset="./img/gym-small.webp 1x, ./img/gym-small@2x.webp 2x" type="image/webp">
-              <source media="(max-width: 767px)" width="678" height="345" srcset="./img/gym-medium.webp 1x, ./img/gym-medium@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 320px)" width="320" height="313"
+                srcset="./img/gym-small.webp 1x, ./img/gym-small@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 768px)" width="678" height="345"
+                srcset="./img/gym-medium.webp 1x, ./img/gym-medium@2x.webp 2x" type="image/webp">
               <source srcset="./img/gym-large.webp 1x, ./img/gym-large@2x.webp 2x" type="image/webp">
-              <source media="(max-width: 320px)" width="320" height="313" srcset="./img/gym-small.jpg 1x, ./img/gym-small@2x.jpg 2x">
-              <source media="(max-width: 767px)" width="678" height="345" srcset="./img/gym-medium.jpg 1x, ./img/gym-medium@2x.jpg 2x">
-              <img width="660" height="401" alt="Фото зала." src="./img/gym-large.jpg" srcset="./img/gym-large@2x.jpg 2x">
+              <source media="(max-width: 320px)" width="320" height="313"
+                srcset="./img/gym-small.jpg 1x, ./img/gym-small@2x.jpg 2x">
+              <source media="(max-width: 768px)" width="678" height="345"
+                srcset="./img/gym-medium.jpg 1x, ./img/gym-medium@2x.jpg 2x">
+              <img width="660" height="401" alt="Фото зала." src="./img/gym-large.jpg"
+                srcset="./img/gym-large@2x.jpg 2x">
             </picture>
             <div class="gym__video">
               <picture>
-                <source media="(max-width: 320px)" width="320" height="167" srcset="./img/video-preview-small.webp 1x, ./img/video-preview-small@2x.webp 2x" type="image/webp">
-                <source media="(max-width: 767px)" width="266" height="167" srcset="./img/video-preview-medium.webp 1x, ./img/video-preview-medium@2x.webp 2x" type="image/webp">
-                <source srcset="./img/video-preview-large.webp 1x, ./img/video-preview-large@2x.webp 2x" type="image/webp">
-                <source media="(max-width: 320px)" width="320" height="167" srcset="./img/video-preview-small.jpg 1x, ./img/video-preview-small@2x.jpg 2x">
-                <source media="(max-width: 767px)" width="266" height="167" srcset="./img/video-preview-medium.jpg 1x, ./img/video-preview-medium@2x.jpg 2x">
-                <img width="364" height="228" alt="Превью видео." src="./img/video-preview-large.jpg" srcset="./img/video-preview-large@2x.jpg 2x">
+                <source media="(max-width: 320px)" width="320" height="167"
+                  srcset="./img/video-preview-small.webp 1x, ./img/video-preview-small@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 768px)" width="266" height="167"
+                  srcset="./img/video-preview-medium.webp 1x, ./img/video-preview-medium@2x.webp 2x" type="image/webp">
+                <source srcset="./img/video-preview-large.webp 1x, ./img/video-preview-large@2x.webp 2x"
+                  type="image/webp">
+                <source media="(max-width: 320px)" width="320" height="167"
+                  srcset="./img/video-preview-small.jpg 1x, ./img/video-preview-small@2x.jpg 2x">
+                <source media="(max-width: 768px)" width="266" height="167"
+                  srcset="./img/video-preview-medium.jpg 1x, ./img/video-preview-medium@2x.jpg 2x">
+                <img width="364" height="228" alt="Превью видео." src="./img/video-preview-large.jpg"
+                  srcset="./img/video-preview-large@2x.jpg 2x">
               </picture>
-              <button class="play-button" aria-label="Кнопка включения списка."></button>
+              <div class="play-button">
+                <button aria-label="Включить видео.">
+                  <svg width="13" height="15" fill="none">
+                    <use xlink:href="./img/sprite.svg#play-icon"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -99,119 +127,137 @@
         <div class="membership__wrapper">
           <div class="membership-container tabs" data-tabs="parent">
             <h2 class="membership__title">Абонементы</h2>
-          <ul class="membership__tabs-wrapper tabs__controls" data-tabs="controls">
-            <li class="membership__tab tabs__control for-load" data-tabs="control" tabindex="0">1 месяц</li>
-            <li class="membership__tab tabs__control" data-tabs="control" tabindex="0">6 месяцев</li>
-            <li class="membership__tab tabs__control" data-tabs="control" tabindex="0">12 месяцев</li>
-          </ul>
-          <div class="membership__cards-container tabs__content" data-tabs="content">
-            <ul class="membership__card-list tabs__element" data-tabs="element">
-              <li class="membership__card">
-                <span class="membership__card-plan">С тренером</span>
-                <span class="membership__card-info">12 занятий</span>
-                <div class="membership__card-price-wrapper">
-                  <span class="membership__card-price-shadow">5000</span>
-                  <span class="membership__card-price">5000
-                    <svg width="30" height="42"><use xlink:href="./img/sprite.svg#rub"></use></svg>
-                  </span>
-                </div>
-                <a class="membership__button button button--alt" href="#">Купить абонемент</a>
-              </li>
-              <li class="membership__card">
-                <span class="membership__card-plan">Дневной</span>
-                <span class="membership__card-info">с 8:00 до 17:00</span>
-                <div class="membership__card-price-wrapper">
-                  <span class="membership__card-price-shadow">1700</span>
-                  <span class="membership__card-price">1700
-                    <svg width="30" height="42"><use xlink:href="./img/sprite.svg#rub"></use></svg>
-                  </span>
-                </div>
-                <a class="membership__button button button--alt" href="#">Купить абонемент</a>
-              </li>
-              <li class="membership__card">
-                <span class="membership__card-plan">Полный день</span>
-                <span class="membership__card-info">с 8:00 до 22:00 </span>
-                <div class="membership__card-price-wrapper">
-                  <span class="membership__card-price-shadow">2700</span>
-                  <span class="membership__card-price">2700
-                    <svg width="30" height="42"><use xlink:href="./img/sprite.svg#rub"></use></svg>
-                  </span>
-                </div>
-                <a class="membership__button button button--alt" href="#">Купить абонемент</a>
-              </li>
+            <ul class="membership__tabs-wrapper tabs__controls" data-tabs="controls">
+              <li class="membership__tab tabs__control for-load" data-tabs="control" tabindex="0">1 месяц</li>
+              <li class="membership__tab tabs__control" data-tabs="control" tabindex="0">6 месяцев</li>
+              <li class="membership__tab tabs__control" data-tabs="control" tabindex="0">12 месяцев</li>
             </ul>
-            <ul class="membership__card-list tabs__element" data-tabs="element">
-              <li class="membership__card">
-                <span class="membership__card-plan">С тренером</span>
-                <span class="membership__card-info">72 занятия</span>
-                <div class="membership__card-price-wrapper">
-                  <span class="membership__card-price-shadow">4250</span>
-                  <span class="membership__card-price">4250
-                    <svg width="30" height="42"><use xlink:href="./img/sprite.svg#rub"></use></svg>
-                  </span>
-                </div>
-                <a class="membership__button button button--alt" href="#">Купить абонемент</a>
-              </li>
-              <li class="membership__card">
-                <span class="membership__card-plan">Дневной</span>
-                <span class="membership__card-info">с 8:00 до 17:00</span>
-                <div class="membership__card-price-wrapper">
-                  <span class="membership__card-price-shadow">1445</span>
-                  <span class="membership__card-price">1445
-                    <svg width="30" height="42"><use xlink:href="./img/sprite.svg#rub"></use></svg>
+            <div class="membership__cards-container tabs__content" data-tabs="content">
+              <ul class="membership__card-list tabs__element" data-tabs="element">
+                <li class="membership__card">
+                  <span class="membership__card-plan">С тренером</span>
+                  <span class="membership__card-info">12 занятий</span>
+                  <div class="membership__card-price-wrapper">
+                    <span class="membership__card-price-shadow">5000</span>
+                    <span class="membership__card-price">5000
+                      <svg width="30" height="42">
+                        <use xlink:href="./img/sprite.svg#rub"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <a class="membership__button button button--alt" href="#">Купить абонемент</a>
+                </li>
+                <li class="membership__card">
+                  <span class="membership__card-plan">Дневной</span>
+                  <span class="membership__card-info">с 8:00 до 17:00</span>
+                  <div class="membership__card-price-wrapper">
+                    <span class="membership__card-price-shadow">1700</span>
+                    <span class="membership__card-price">1700
+                      <svg width="30" height="42">
+                        <use xlink:href="./img/sprite.svg#rub"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <a class="membership__button button button--alt" href="#">Купить абонемент</a>
+                </li>
+                <li class="membership__card">
+                  <span class="membership__card-plan">Полный день</span>
+                  <span class="membership__card-info">с 8:00 до 22:00 </span>
+                  <div class="membership__card-price-wrapper">
+                    <span class="membership__card-price-shadow">2700</span>
+                    <span class="membership__card-price">2700
+                      <svg width="30" height="42">
+                        <use xlink:href="./img/sprite.svg#rub"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <a class="membership__button button button--alt" href="#">Купить абонемент</a>
+                </li>
+              </ul>
+              <ul class="membership__card-list tabs__element" data-tabs="element">
+                <li class="membership__card">
+                  <span class="membership__card-plan">С тренером</span>
+                  <span class="membership__card-info">72 занятия</span>
+                  <div class="membership__card-price-wrapper">
+                    <span class="membership__card-price-shadow">4250</span>
+                    <span class="membership__card-price">4250
+                      <svg width="30" height="42">
+                        <use xlink:href="./img/sprite.svg#rub"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <a class="membership__button button button--alt" href="#">Купить абонемент</a>
+                </li>
+                <li class="membership__card">
+                  <span class="membership__card-plan">Дневной</span>
+                  <span class="membership__card-info">с 8:00 до 17:00</span>
+                  <div class="membership__card-price-wrapper">
+                    <span class="membership__card-price-shadow">1445</span>
+                    <span class="membership__card-price">1445
+                      <svg width="30" height="42">
+                        <use xlink:href="./img/sprite.svg#rub"></use>
+                      </svg>
 
-                  </span>
-                </div>
-                <a class="membership__button button button--alt" href="#">Купить абонемент</a>
-              </li>
-              <li class="membership__card">
-                <span class="membership__card-plan">Полный день</span>
-                <span class="membership__card-info">с 8:00 до 22:00 </span>
-                <div class="membership__card-price-wrapper">
-                  <span class="membership__card-price-shadow">2295</span>
-                  <span class="membership__card-price">2295
-                    <svg width="30" height="42"><use xlink:href="./img/sprite.svg#rub"></use></svg>
-                  </span>
-                </div>
-                <a class="membership__button button button--alt" href="#">Купить абонемент</a>
-              </li>
-            </ul>
-            <ul class="membership__card-list tabs__element" data-tabs="element">
-              <li class="membership__card">
-                <span class="membership__card-plan">С тренером</span>
-                <span class="membership__card-info">144 занятия</span>
-                <div class="membership__card-price-wrapper">
-                  <span class="membership__card-price-shadow">3500</span>
-                  <span class="membership__card-price">3500
-                    <svg width="30" height="42"><use xlink:href="./img/sprite.svg#rub"></use></svg>
-                  </span>
-                </div>
-                <a class="membership__button button button--alt" href="#">Купить абонемент</a>
-              </li>
-              <li class="membership__card">
-                <span class="membership__card-plan">Дневной</span>
-                <span class="membership__card-info">с 8:00 до 17:00</span>
-                <div class="membership__card-price-wrapper">
-                  <span class="membership__card-price-shadow">1190</span>
-                  <span class="membership__card-price">1190
-                    <svg width="30" height="42"><use xlink:href="./img/sprite.svg#rub"></use></svg>
-                  </span>
-                </div>
-                <a class="membership__button button button--alt" href="#">Купить абонемент</a>
-              </li>
-              <li class="membership__card">
-                <span class="membership__card-plan">Полный день</span>
-                <span class="membership__card-info">с 8:00 до 22:00 </span>
-                <div class="membership__card-price-wrapper">
-                  <span class="membership__card-price-shadow">1890</span>
-                  <span class="membership__card-price">1890
-                    <svg width="30" height="42"><use xlink:href="./img/sprite.svg#rub"></use></svg>
-                  </span>
-                </div>
-                <a class="membership__button button button--alt" href="#">Купить абонемент</a>
-              </li>
-            </ul>
-          </div>
+                    </span>
+                  </div>
+                  <a class="membership__button button button--alt" href="#">Купить абонемент</a>
+                </li>
+                <li class="membership__card">
+                  <span class="membership__card-plan">Полный день</span>
+                  <span class="membership__card-info">с 8:00 до 22:00 </span>
+                  <div class="membership__card-price-wrapper">
+                    <span class="membership__card-price-shadow">2295</span>
+                    <span class="membership__card-price">2295
+                      <svg width="30" height="42">
+                        <use xlink:href="./img/sprite.svg#rub"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <a class="membership__button button button--alt" href="#">Купить абонемент</a>
+                </li>
+              </ul>
+              <ul class="membership__card-list tabs__element" data-tabs="element">
+                <li class="membership__card">
+                  <span class="membership__card-plan">С тренером</span>
+                  <span class="membership__card-info">144 занятия</span>
+                  <div class="membership__card-price-wrapper">
+                    <span class="membership__card-price-shadow">3500</span>
+                    <span class="membership__card-price">3500
+                      <svg width="30" height="42">
+                        <use xlink:href="./img/sprite.svg#rub"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <a class="membership__button button button--alt" href="#">Купить абонемент</a>
+                </li>
+                <li class="membership__card">
+                  <span class="membership__card-plan">Дневной</span>
+                  <span class="membership__card-info">с 8:00 до 17:00</span>
+                  <div class="membership__card-price-wrapper">
+                    <span class="membership__card-price-shadow">1190</span>
+                    <span class="membership__card-price">1190
+                      <svg width="30" height="42">
+                        <use xlink:href="./img/sprite.svg#rub"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <a class="membership__button button button--alt" href="#">Купить абонемент</a>
+                </li>
+                <li class="membership__card">
+                  <span class="membership__card-plan">Полный день</span>
+                  <span class="membership__card-info">с 8:00 до 22:00 </span>
+                  <div class="membership__card-price-wrapper">
+                    <span class="membership__card-price-shadow">1890</span>
+                    <span class="membership__card-price">1890
+                      <svg width="30" height="42">
+                        <use xlink:href="./img/sprite.svg#rub"></use>
+                      </svg>
+                    </span>
+                  </div>
+                  <a class="membership__button button button--alt" href="#">Купить абонемент</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="membership__decor">
             <img width="321" height="384" src="./img/membership-decor.webp" alt="Гантели.">
@@ -270,14 +316,14 @@
                   <div class="coaches__profile">
                     <div class="coaches__photo">
                       <picture>
-                        <source media="(max-width: 767px)" width="226" height="274"
+                        <source media="(max-width: 321px)" width="226" height="274"
                           srcset="./img/Anna-Pavlova.webp 1x, ./img/Anna-Pavlova@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 1199px)" width="268" height="294"
+                        <source media="(max-width: 768px)" width="268" height="294"
                           srcset="./img/Anna-Pavlova.webp 1x, ./img/Anna-Pavlova@2x.webp 2x" type="image/webp">
                         <source srcset="./img/Anna-Pavlova.webp 1x, ./img/Anna-Pavlova@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="226" height="274"
+                        <source media="(max-width: 321px)" width="226" height="274"
                           srcset="./img/Anna-Pavlova.jpg 1x, ./img/Anna-Pavlova@2x.jpg 2x">
-                        <source media="(max-width: 1199px)" width="268" height="294"
+                        <source media="(max-width: 768px)" width="268" height="294"
                           srcset="./img/Anna-Pavlova.jpg 1x, ./img/Anna-Pavlova@2x.jpg 2x">
                         <img width="260" height="294" alt="Анна Павлова" src="./img/Anna-Pavlova.jpg"
                           srcset="./img/Anna-Pavlova.jpg@2x.jpg 2x">
@@ -299,14 +345,14 @@
                   <div class="coaches__profile">
                     <div class="coaches__photo">
                       <picture>
-                        <source media="(max-width: 767px)" width="226" height="274"
+                        <source media="(max-width: 320px)" width="226" height="274"
                           srcset="./img/Alexei-Lavrov.webp 1x, ./img/Alexei-Lavrov@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 1199px)" width="268" height="294"
+                        <source media="(max-width: 768px)" width="268" height="294"
                           srcset="./img/Alexei-Lavrov.webp 1x, ./img/Alexei-Lavrov@2x.webp 2x" type="image/webp">
                         <source srcset="./img/Alexei-Lavrov.webp 1x, ./img/Alexei-Lavrov@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="226" height="274"
+                        <source media="(max-width: 320px)" width="226" height="274"
                           srcset="./img/Alexei-Lavrov.jpg 1x, ./img/Alexei-Lavrov@2x.jpg 2x">
-                        <source media="(max-width: 1199px)" width="268" height="294"
+                        <source media="(max-width: 768px)" width="268" height="294"
                           srcset="./img/Alexei-Lavrov.jpg 1x, ./img/Alexei-Lavrov@2x.jpg 2x">
                         <img width="260" height="294" alt="Алексей Лавров" src="./img/Alexei-Lavrov.jpg"
                           srcset="./img/Alexei-Lavrov.jpg@2x.jpg 2x">
@@ -328,15 +374,17 @@
                   <div class="coaches__profile">
                     <div class="coaches__photo">
                       <picture>
-                        <source media="(max-width: 767px)" width="226" height="274"
-                          srcset="./img/Alexander-Pashkov.webp 1x, ./img/Alexander-Pashkov@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 1199px)" width="268" height="294"
-                          srcset="./img/Alexander-Pashkov.webp 1x, ./img/Alexander-Pashkov@2x.webp 2x" type="image/webp">
+                        <source media="(max-width: 320px)" width="226" height="274"
+                          srcset="./img/Alexander-Pashkov.webp 1x, ./img/Alexander-Pashkov@2x.webp 2x"
+                          type="image/webp">
+                        <source media="(max-width: 768px)" width="268" height="294"
+                          srcset="./img/Alexander-Pashkov.webp 1x, ./img/Alexander-Pashkov@2x.webp 2x"
+                          type="image/webp">
                         <source srcset="./img/Alexander-Pashkov.webp 1x, ./img/Alexander-Pashkov@2x.webp 2x"
                           type="image/webp">
-                        <source media="(max-width: 767px)" width="226" height="274"
+                        <source media="(max-width: 320px)" width="226" height="274"
                           srcset="./img/Alexander-Pashkov.jpg 1x, ./img/Alexander-Pashkov@2x.jpg 2x">
-                        <source media="(max-width: 1199px)" width="268" height="294"
+                        <source media="(max-width: 768px)" width="268" height="294"
                           srcset="./img/Alexander-Pashkov.jpg 1x, ./img/Alexander-Pashkov@2x.jpg 2x">
                         <img width="260" height="294" alt="Александр Пашков" src="./img/Alexander-Pashkov.jpg"
                           srcset="./img/Alexander-Pashkov.jpg@2x.jpg 2x">
@@ -358,14 +406,14 @@
                   <div class="coaches__profile">
                     <div class="coaches__photo">
                       <picture>
-                        <source media="(max-width: 767px)" width="226" height="274"
+                        <source media="(max-width: 320px)" width="226" height="274"
                           srcset="./img/Maria-Ketova.webp 1x, ./img/Maria-Ketova@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 1199px)" width="268" height="294"
+                        <source media="(max-width: 768px)" width="268" height="294"
                           srcset="./img/Maria-Ketova.webp 1x, ./img/Maria-Ketova@2x.webp 2x" type="image/webp">
                         <source srcset="./img/Maria-Ketova.webp 1x, ./img/Maria-Ketova@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="226" height="274"
+                        <source media="(max-width: 320px)" width="226" height="274"
                           srcset="./img/Maria-Ketova.jpg 1x, ./img/Maria-Ketova@2x.jpg 2x">
-                        <source media="(max-width: 1199px)" width="268" height="294"
+                        <source media="(max-width: 768px)" width="268" height="294"
                           srcset="./img/Maria-Ketova.jpg 1x, ./img/Maria-Ketova@2x.jpg 2x">
                         <img width="260" height="294" alt="Мария Кетова" src="./img/Maria-Ketova.jpg"
                           srcset="./img/Maria-Ketova.jpg@2x.jpg 2x">
@@ -387,14 +435,14 @@
                   <div class="coaches__profile">
                     <div class="coaches__photo">
                       <picture>
-                        <source media="(max-width: 767px)" width="226" height="274"
+                        <source media="(max-width: 320px)" width="226" height="274"
                           srcset="./img/Anna-Pavlova.webp 1x, ./img/Anna-Pavlova@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 1199px)" width="268" height="294"
+                        <source media="(max-width: 768px)" width="268" height="294"
                           srcset="./img/Anna-Pavlova.webp 1x, ./img/Anna-Pavlova@2x.webp 2x" type="image/webp">
                         <source srcset="./img/Anna-Pavlova.webp 1x, ./img/Anna-Pavlova@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="226" height="274"
+                        <source media="(max-width: 320px)" width="226" height="274"
                           srcset="./img/Anna-Pavlova.jpg 1x, ./img/Anna-Pavlova@2x.jpg 2x">
-                        <source media="(max-width: 1199px)" width="268" height="294"
+                        <source media="(max-width: 768px)" width="268" height="294"
                           srcset="./img/Anna-Pavlova.jpg 1x, ./img/Anna-Pavlova@2x.jpg 2x">
                         <img width="260" height="294" alt="Анна Павлова" src="./img/Anna-Pavlova.jpg"
                           srcset="./img/Anna-Pavlova.jpg@2x.jpg 2x">
@@ -416,14 +464,14 @@
                   <div class="coaches__profile">
                     <div class="coaches__photo">
                       <picture>
-                        <source media="(max-width: 767px)" width="226" height="274"
+                        <source media="(max-width: 320px)" width="226" height="274"
                           srcset="./img/Alexei-Lavrov.webp 1x, ./img/Alexei-Lavrov@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 1199px)" width="268" height="294"
+                        <source media="(max-width: 768px)" width="268" height="294"
                           srcset="./img/Alexei-Lavrov.webp 1x, ./img/Alexei-Lavrov@2x.webp 2x" type="image/webp">
                         <source srcset="./img/Alexei-Lavrov.webp 1x, ./img/Alexei-Lavrov@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="226" height="274"
+                        <source media="(max-width: 320px)" width="226" height="274"
                           srcset="./img/Alexei-Lavrov.jpg 1x, ./img/Alexei-Lavrov@2x.jpg 2x">
-                        <source media="(max-width: 1199px)" width="268" height="294"
+                        <source media="(max-width: 768px)" width="268" height="294"
                           srcset="./img/Alexei-Lavrov.jpg 1x, ./img/Alexei-Lavrov@2x.jpg 2x">
                         <img width="260" height="294" alt="Алексей Лавров" src="./img/Alexei-Lavrov.jpg"
                           srcset="./img/Alexei-Lavrov.jpg@2x.jpg 2x">
@@ -445,15 +493,17 @@
                   <div class="coaches__profile">
                     <div class="coaches__photo">
                       <picture>
-                        <source media="(max-width: 767px)" width="226" height="274"
-                          srcset="./img/Alexander-Pashkov.webp 1x, ./img/Alexander-Pashkov@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 1199px)" width="268" height="294"
-                          srcset="./img/Alexander-Pashkov.webp 1x, ./img/Alexander-Pashkov@2x.webp 2x" type="image/webp">
+                        <source media="(max-width: 320px)" width="226" height="274"
+                          srcset="./img/Alexander-Pashkov.webp 1x, ./img/Alexander-Pashkov@2x.webp 2x"
+                          type="image/webp">
+                        <source media="(max-width: 768px)" width="268" height="294"
+                          srcset="./img/Alexander-Pashkov.webp 1x, ./img/Alexander-Pashkov@2x.webp 2x"
+                          type="image/webp">
                         <source srcset="./img/Alexander-Pashkov.webp 1x, ./img/Alexander-Pashkov@2x.webp 2x"
                           type="image/webp">
-                        <source media="(max-width: 767px)" width="226" height="274"
+                        <source media="(max-width: 320px)" width="226" height="274"
                           srcset="./img/Alexander-Pashkov.jpg 1x, ./img/Alexander-Pashkov@2x.jpg 2x">
-                        <source media="(max-width: 1199px)" width="268" height="294"
+                        <source media="(max-width: 768px)" width="268" height="294"
                           srcset="./img/Alexander-Pashkov.jpg 1x, ./img/Alexander-Pashkov@2x.jpg 2x">
                         <img width="260" height="294" alt="Александр Пашков" src="./img/Alexander-Pashkov.jpg"
                           srcset="./img/Alexander-Pashkov.jpg@2x.jpg 2x">
@@ -475,14 +525,14 @@
                   <div class="coaches__profile">
                     <div class="coaches__photo">
                       <picture>
-                        <source media="(max-width: 767px)" width="226" height="274"
+                        <source media="(max-width: 320px)" width="226" height="274"
                           srcset="./img/Maria-Ketova.webp 1x, ./img/Maria-Ketova@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 1199px)" width="268" height="294"
+                        <source media="(max-width: 768px)" width="268" height="294"
                           srcset="./img/Maria-Ketova.webp 1x, ./img/Maria-Ketova@2x.webp 2x" type="image/webp">
                         <source srcset="./img/Maria-Ketova.webp 1x, ./img/Maria-Ketova@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" width="226" height="274"
+                        <source media="(max-width: 320px)" width="226" height="274"
                           srcset="./img/Maria-Ketova.jpg 1x, ./img/Maria-Ketova@2x.jpg 2x">
-                        <source media="(max-width: 1199px)" width="268" height="294"
+                        <source media="(max-width: 768px)" width="268" height="294"
                           srcset="./img/Maria-Ketova.jpg 1x, ./img/Maria-Ketova@2x.jpg 2x">
                         <img width="260" height="294" alt="Мария Кетова" src="./img/Maria-Ketova.jpg"
                           srcset="./img/Maria-Ketova.jpg@2x.jpg 2x">
@@ -503,8 +553,16 @@
               </div>
             </div>
           </div>
-          <div class="coaches__button-prev swiper-button-prev"></div>
-          <div class="coaches__button-next swiper-button-next"></div>
+          <div class="coaches__button coaches__button--prev swiper-button-prev">
+            <svg width="16" height="32">
+              <use xlink:href="./img/sprite.svg#icon-arrow-prev" fill="none" stroke="#102654"></use>
+            </svg>
+          </div>
+          <div class="coaches__button coaches__button--next swiper-button-next">
+            <svg width="16" height="32">
+              <use xlink:href="./img/sprite.svg#icon-arrow-next" fill="none" stroke="#102654"></use>
+            </svg>
+          </div>
         </div>
       </section>
 
@@ -528,7 +586,7 @@
             </div>
             <div class="advantages__text-wrapper">
               <span class="advantages__item-name">Собственная парковка</span>
-              <span class="advantages__item-description">Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей
+              <span class="advantages__item-description">Вы&nbsp;всегда найдете место для своей машины на&nbsp;
                 парковке</span>
             </div>
           </div>
@@ -554,7 +612,7 @@
             </div>
             <div class="advantages__text-wrapper">
               <span class="advantages__item-name">Тренерский опыт</span>
-              <span class="advantages__item-description">Добивайтесь своих целей быстрее с&nbsp;профессиональным
+              <span class="advantages__item-description">Добивайтесь целей быстрее с&nbsp;профессиональным
                 тренером</span>
             </div>
           </div>
@@ -569,7 +627,8 @@
               <div class="special-offers__text-wrapper">
                 <span class="special-offers__big-text special-offers__big-text--contrast">Год</span>
                 <span class="special-offers__price">4999</span>
-                <span class="special-offers__small-text special-offers__small-text--contrast">Безлимитный абонемент<br>в&nbsp;тренажерный зал</span>
+                <span class="special-offers__small-text special-offers__small-text--contrast">Безлимитный
+                  абонемент<br>в&nbsp;тренажерный зал</span>
               </div>
               <a class="special-offers__link special-offers__link--contrast" href="#">подробнее</a>
             </div>
@@ -584,8 +643,8 @@
                   srcset="./img/promo-1-small.jpg 1x, ./img/promo-1-small@2x.jpg 2x">
                 <source media="(max-width: 1199px)" width="400" height="462"
                   srcset="./img/promo-1-medium.jpg 1x, ./img/promo-1-medium@2x.jpg 2x">
-                <img width="280" height="462" alt="123"
-                  src="./img/promo-1-large.jpg" srcset="./img/promo-1-large@2x.jpg 2x">
+                <img width="280" height="462" alt="123" src="./img/promo-1-large.jpg"
+                  srcset="./img/promo-1-large@2x.jpg 2x">
               </picture>
             </div>
           </div>
@@ -620,52 +679,60 @@
 
               <ul class="faq__accordion-list" data-tabs="element" data-accordion="parent">
                 <li class="faq__accordion-item" data-accordion="element">
-                  <div class="faq__title-wrapper">
+                  <div class="faq__title-wrapper" data-accordion="button">
                     <h3 class="faq__accordion-title">Как стать членом фитнес-центра?</h3>
-                    <button class="faq__accordion-button" data-accordion="button" aria-label="Открыть описание."></button>
+                    <button class="faq__accordion-button"
+                      aria-label="Открыть описание."></button>
                   </div>
                   <p class="faq__accordion-text" data-accordion="content">
-                    При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор.
+                    При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать
+                    договор.
                     При
                     покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.
                   </p>
                 </li>
                 <li class="faq__accordion-item" data-accordion="element">
-                  <div class="faq__title-wrapper">
+                  <div class="faq__title-wrapper" data-accordion="button">
                     <h3 class="faq__accordion-title">Где можно посмотреть расписание?</h3>
-                    <button class="faq__accordion-button" data-accordion="button" aria-label="Открыть описание."></button>
+                    <button class="faq__accordion-button"
+                      aria-label="Открыть описание."></button>
                   </div>
                   <p class="faq__accordion-text" data-accordion="content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget condimentum dui. Suspendisse
                     potenti.
-                    Vivamus malesuada ut&nbsp;tellus in&nbsp;ultricies. Donec feugiat rutrum felis, laoreet venenatis diam
+                    Vivamus malesuada ut&nbsp;tellus in&nbsp;ultricies. Donec feugiat rutrum felis, laoreet venenatis
+                    diam
                     euismod&nbsp;eu. Aliquam quis venenatis orci, in&nbsp;viverra erat. Nam finibus condimentum urna,
                     consectetur luctus sem viverra vel. Pellentesque venenatis et&nbsp;ante ornare.
                   </p>
                 </li>
                 <li class="faq__accordion-item" data-accordion="element">
-                  <div class="faq__title-wrapper">
+                  <div class="faq__title-wrapper" data-accordion="button">
                     <h3 class="faq__accordion-title">Есть кулеры в&nbsp;центре? Предоставляются полотенца?</h3>
-                    <button class="faq__accordion-button" data-accordion="button" aria-label="Открыть описание."></button>
+                    <button class="faq__accordion-button"
+                      aria-label="Открыть описание."></button>
                   </div>
                   <p class="faq__accordion-text" data-accordion="content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget condimentum dui. Suspendisse
                     potenti.
-                    Vivamus malesuada ut&nbsp;tellus in&nbsp;ultricies. Donec feugiat rutrum felis, laoreet venenatis diam
+                    Vivamus malesuada ut&nbsp;tellus in&nbsp;ultricies. Donec feugiat rutrum felis, laoreet venenatis
+                    diam
                     euismod&nbsp;eu. Aliquam quis venenatis orci, in&nbsp;viverra erat. Nam finibus condimentum urna,
                     consectetur luctus sem viverra vel. Pellentesque venenatis et&nbsp;ante ornare.
                   </p>
                 </li>
                 <li class="faq__accordion-item" data-accordion="element">
-                  <div class="faq__title-wrapper">
+                  <div class="faq__title-wrapper" data-accordion="button">
                     <h3 class="faq__accordion-title">Сколько тренеров работает в&nbsp;клубе и&nbsp;какова
                       их&nbsp;квалификация?</h3>
-                    <button class="faq__accordion-button" data-accordion="button" aria-label="Открыть описание."></button>
+                    <button class="faq__accordion-button"
+                      aria-label="Открыть описание."></button>
                   </div>
                   <p class="faq__accordion-text" data-accordion="content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget condimentum dui. Suspendisse
                     potenti.
-                    Vivamus malesuada ut&nbsp;tellus in&nbsp;ultricies. Donec feugiat rutrum felis, laoreet venenatis diam
+                    Vivamus malesuada ut&nbsp;tellus in&nbsp;ultricies. Donec feugiat rutrum felis, laoreet venenatis
+                    diam
                     euismod&nbsp;eu. Aliquam quis venenatis orci, in&nbsp;viverra erat. Nam finibus condimentum urna,
                     consectetur luctus sem viverra vel. Pellentesque venenatis et&nbsp;ante ornare.
                   </p>
@@ -674,12 +741,14 @@
 
               <ul class="faq__accordion-list" data-tabs="element" data-accordion="parent">
                 <li class="faq__accordion-item" data-accordion="element">
-                  <div class="faq__title-wrapper">
+                  <div class="faq__title-wrapper" data-accordion="button">
                     <h3 class="faq__accordion-title">Занятия с&nbsp;тренером входят в&nbsp;абонемент?</h3>
-                    <button class="faq__accordion-button" data-accordion="button" aria-label="Открыть описание."></button>
+                    <button class="faq__accordion-button"
+                      aria-label="Открыть описание."></button>
                   </div>
                   <p class="faq__accordion-text" data-accordion="content">
-                    При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно. В&nbsp;зале
+                    При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно.
+                    В&nbsp;зале
                     всегда
                     присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
                     по&nbsp;тренажеру или
@@ -687,42 +756,48 @@
                   </p>
                 </li>
                 <li class="faq__accordion-item" data-accordion="element">
-                  <div class="faq__title-wrapper">
+                  <div class="faq__title-wrapper" data-accordion="button">
                     <h3 class="faq__accordion-title">Можно&nbsp;ли заморозить абонемент?</h3>
-                    <button class="faq__accordion-button" data-accordion="button" aria-label="Открыть описание."></button>
+                    <button class="faq__accordion-button"
+                      aria-label="Открыть описание."></button>
                   </div>
                   <p class="faq__accordion-text" data-accordion="content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget condimentum dui. Suspendisse
                     potenti.
-                    Vivamus malesuada ut&nbsp;tellus in&nbsp;ultricies. Donec feugiat rutrum felis, laoreet venenatis diam
+                    Vivamus malesuada ut&nbsp;tellus in&nbsp;ultricies. Donec feugiat rutrum felis, laoreet venenatis
+                    diam
                     euismod&nbsp;eu. Aliquam quis venenatis orci, in&nbsp;viverra erat. Nam finibus condimentum urna,
                     consectetur luctus sem viverra vel. Pellentesque venenatis et&nbsp;ante ornare.
                   </p>
                 </li>
                 <li class="faq__accordion-item" data-accordion="element">
-                  <div class="faq__title-wrapper">
+                  <div class="faq__title-wrapper" data-accordion="button">
                     <h3 class="faq__accordion-title">Есть&nbsp;ли лимит по&nbsp;посещениям тренажерного зала
                       и&nbsp;групповых занятий?
                     </h3>
-                    <button class="faq__accordion-button" data-accordion="button" aria-label="Открыть описание."></button>
+                    <button class="faq__accordion-button"
+                      aria-label="Открыть описание."></button>
                   </div>
                   <p class="faq__accordion-text" data-accordion="content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget condimentum dui. Suspendisse
                     potenti.
-                    Vivamus malesuada ut&nbsp;tellus in&nbsp;ultricies. Donec feugiat rutrum felis, laoreet venenatis diam
+                    Vivamus malesuada ut&nbsp;tellus in&nbsp;ultricies. Donec feugiat rutrum felis, laoreet venenatis
+                    diam
                     euismod&nbsp;eu. Aliquam quis venenatis orci, in&nbsp;viverra erat. Nam finibus condimentum urna,
                     consectetur luctus sem viverra vel. Pellentesque venenatis et&nbsp;ante ornare.
                   </p>
                 </li>
                 <li class="faq__accordion-item" data-accordion="element">
-                  <div class="faq__title-wrapper">
+                  <div class="faq__title-wrapper" data-accordion="button">
                     <h3 class="faq__accordion-title">Что такое семейный доступ и&nbsp;доступ для друзей?</h3>
-                    <button class="faq__accordion-button" data-accordion="button" aria-label="Открыть описание."></button>
+                    <button class="faq__accordion-button"
+                      aria-label="Открыть описание."></button>
                   </div>
                   <p class="faq__accordion-text" data-accordion="content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget condimentum dui. Suspendisse
                     potenti.
-                    Vivamus malesuada ut&nbsp;tellus in&nbsp;ultricies. Donec feugiat rutrum felis, laoreet venenatis diam
+                    Vivamus malesuada ut&nbsp;tellus in&nbsp;ultricies. Donec feugiat rutrum felis, laoreet venenatis
+                    diam
                     euismod&nbsp;eu. Aliquam quis venenatis orci, in&nbsp;viverra erat. Nam finibus condimentum urna,
                     consectetur luctus sem viverra vel. Pellentesque venenatis et&nbsp;ante ornare.
                   </p>
@@ -731,11 +806,12 @@
 
               <ul class="faq__accordion-list" data-tabs="element" data-accordion="parent">
                 <li class="faq__accordion-item" data-accordion="element">
-                  <div class="faq__title-wrapper">
+                  <div class="faq__title-wrapper" data-accordion="button">
                     <h3 class="faq__accordion-title">Предлагает&nbsp;ли клуб услуги по&nbsp;консультированию
                       по&nbsp;вопросам питания?
                     </h3>
-                    <button class="faq__accordion-button" data-accordion="button" aria-label="Открыть описание."></button>
+                    <button class="faq__accordion-button"
+                      aria-label="Открыть описание."></button>
                   </div>
                   <p class="faq__accordion-text" data-accordion="content">
                     Да. Вы&nbsp;можете обратиться как к&nbsp;своему тренеру, так и&nbsp;к&nbsp;нашему нутрициологу.
@@ -744,41 +820,47 @@
                   </p>
                 </li>
                 <li class="faq__accordion-item" data-accordion="element">
-                  <div class="faq__title-wrapper">
+                  <div class="faq__title-wrapper" data-accordion="button">
                     <h3 class="faq__accordion-title">Проводятся&nbsp;ли в&nbsp;клубе какие-либо мероприятия или
                       соревнования?</h3>
-                    <button class="faq__accordion-button" data-accordion="button" aria-label="Открыть описание."></button>
+                    <button class="faq__accordion-button"
+                      aria-label="Открыть описание."></button>
                   </div>
                   <p class="faq__accordion-text" data-accordion="content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget condimentum dui. Suspendisse
                     potenti.
-                    Vivamus malesuada ut&nbsp;tellus in&nbsp;ultricies. Donec feugiat rutrum felis, laoreet venenatis diam
+                    Vivamus malesuada ut&nbsp;tellus in&nbsp;ultricies. Donec feugiat rutrum felis, laoreet venenatis
+                    diam
                     euismod&nbsp;eu. Aliquam quis venenatis orci, in&nbsp;viverra erat. Nam finibus condimentum urna,
                     consectetur luctus sem viverra vel. Pellentesque venenatis et&nbsp;ante ornare.
                   </p>
                 </li>
                 <li class="faq__accordion-item" data-accordion="element">
-                  <div class="faq__title-wrapper">
+                  <div class="faq__title-wrapper" data-accordion="button">
                     <h3 class="faq__accordion-title">Можно&nbsp;ли приобрести в&nbsp;центре спортивное питание?</h3>
-                    <button class="faq__accordion-button" data-accordion="button" aria-label="Открыть описание."></button>
+                    <button class="faq__accordion-button"
+                      aria-label="Открыть описание."></button>
                   </div>
                   <p class="faq__accordion-text" data-accordion="content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget condimentum dui. Suspendisse
                     potenti.
-                    Vivamus malesuada ut&nbsp;tellus in&nbsp;ultricies. Donec feugiat rutrum felis, laoreet venenatis diam
+                    Vivamus malesuada ut&nbsp;tellus in&nbsp;ultricies. Donec feugiat rutrum felis, laoreet venenatis
+                    diam
                     euismod&nbsp;eu. Aliquam quis venenatis orci, in&nbsp;viverra erat. Nam finibus condimentum urna,
                     consectetur luctus sem viverra vel. Pellentesque venenatis et&nbsp;ante ornare.
                   </p>
                 </li>
                 <li class="faq__accordion-item" data-accordion="element">
-                  <div class="faq__title-wrapper">
+                  <div class="faq__title-wrapper" data-accordion="button">
                     <h3 class="faq__accordion-title">Есть&nbsp;ли в&nbsp;центре детская комната?</h3>
-                    <button class="faq__accordion-button" data-accordion="button" aria-label="Открыть описание."></button>
+                    <button class="faq__accordion-button"
+                      aria-label="Открыть описание."></button>
                   </div>
                   <p class="faq__accordion-text" data-accordion="content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget condimentum dui. Suspendisse
                     potenti.
-                    Vivamus malesuada ut&nbsp;tellus in&nbsp;ultricies. Donec feugiat rutrum felis, laoreet venenatis diam
+                    Vivamus malesuada ut&nbsp;tellus in&nbsp;ultricies. Donec feugiat rutrum felis, laoreet venenatis
+                    diam
                     euismod&nbsp;eu. Aliquam quis venenatis orci, in&nbsp;viverra erat. Nam finibus condimentum urna,
                     consectetur luctus sem viverra vel. Pellentesque venenatis et&nbsp;ante ornare.
                   </p>
@@ -787,24 +869,27 @@
 
               <ul class="faq__accordion-list" data-tabs="element" data-accordion="parent">
                 <li class="faq__accordion-item" data-accordion="element">
-                  <div class="faq__title-wrapper">
+                  <div class="faq__title-wrapper" data-accordion="button">
                     <h3 class="faq__accordion-title">Lorem ipsum dolor sit amet.</h3>
-                    <button class="faq__accordion-button" data-accordion="button" aria-label="Открыть описание."></button>
+                    <button class="faq__accordion-button"
+                      aria-label="Открыть описание."></button>
                   </div>
                   <p class="faq__accordion-text" data-accordion="content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget condimentum dui. Suspendisse
                     potenti.
-                    Vivamus malesuada ut&nbsp;tellus in&nbsp;ultricies. Donec feugiat rutrum felis, laoreet venenatis diam
+                    Vivamus malesuada ut&nbsp;tellus in&nbsp;ultricies. Donec feugiat rutrum felis, laoreet venenatis
+                    diam
                     euismod&nbsp;eu. Aliquam quis venenatis orci, in&nbsp;viverra erat. Nam finibus condimentum urna,
                     consectetur luctus sem viverra vel. Pellentesque venenatis et&nbsp;ante ornare.
                   </p>
                 </li>
                 <li class="faq__accordion-item" data-accordion="element">
-                  <div class="faq__title-wrapper">
+                  <div class="faq__title-wrapper" data-accordion="button">
                     <h3 class="faq__accordion-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                       venenatis augue
                       enim, et&nbsp;feugiat eros.</h3>
-                    <button class="faq__accordion-button" data-accordion="button" aria-label="Открыть описание."></button>
+                    <button class="faq__accordion-button"
+                      aria-label="Открыть описание."></button>
                   </div>
                   <p class="faq__accordion-text" data-accordion="content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In&nbsp;eget mauris sit amet sem finibus
@@ -823,14 +908,18 @@
                   </p>
                 </li>
                 <li class="faq__accordion-item" data-accordion="element">
-                  <div class="faq__title-wrapper">
-                    <h3 class="faq__accordion-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nunc
+                  <div class="faq__title-wrapper" data-accordion="button">
+                    <h3 class="faq__accordion-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                      nunc
                       enim, cursus
-                      ac&nbsp;euismod quis, interdum congue lorem. Praesent sed semper nulla. Fusce dignissim congue.</h3>
-                    <button class="faq__accordion-button" data-accordion="button" aria-label="Открыть описание."></button>
+                      ac&nbsp;euismod quis, interdum congue lorem. Praesent sed semper nulla. Fusce dignissim congue.
+                    </h3>
+                    <button class="faq__accordion-button"
+                      aria-label="Открыть описание."></button>
                   </div>
                   <p class="faq__accordion-text" data-accordion="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis mattis augue, ut&nbsp;rutrum
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis mattis augue,
+                    ut&nbsp;rutrum
                     arcu dictum
                     sit amet. Nullam fermentum euismod lorem. Nullam semper ac&nbsp;ex&nbsp;et&nbsp;molestie. Aenean
                     fermentum
@@ -839,7 +928,8 @@
                     Curabitur eget ligula eu&nbsp;est dictum dictum. Morbi feugiat pulvinar sem.
                     <br>
                     Nam vitae volutpat erat. Pellentesque tempor est et&nbsp;dolor condimentum tincidunt. Pellentesque
-                    eu&nbsp;tincidunt odio, eget cursus eros. Vestibulum ut&nbsp;imperdiet justo. Sed id&nbsp;mauris enim.
+                    eu&nbsp;tincidunt odio, eget cursus eros. Vestibulum ut&nbsp;imperdiet justo. Sed id&nbsp;mauris
+                    enim.
                     Quisque
                     commodo tristique arcu at&nbsp;elementum. Duis nunc massa, fermentum id&nbsp;tortor vitae, posuere
                     convallis
@@ -853,13 +943,14 @@
                   </p>
                 </li>
                 <li class="faq__accordion-item" data-accordion="element">
-                  <div class="faq__title-wrapper">
+                  <div class="faq__title-wrapper" data-accordion="button">
                     <h3 class="faq__accordion-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at
                       porta lorem.
                       Fusce luctus erat vel nulla placerat auctor. Aenean justo nisi, venenatis eget nisl vitae, posuere
                       pulvinar
                       lacus. Donec dapibus mi lectus, ac maximus.</h3>
-                    <button class="faq__accordion-button" data-accordion="button" aria-label="Открыть описание."></button>
+                    <button class="faq__accordion-button"
+                      aria-label="Открыть описание."></button>
                   </div>
                   <p class="faq__accordion-text" data-accordion="content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et&nbsp;nulla&nbsp;mi.
@@ -880,7 +971,8 @@
                     dolor
                     vestibulum velit, nec laoreet odio dolor commodo lectus. Mauris tincidunt leo quis velit pulvinar
                     tempus. Quisque
-                    placerat in&nbsp;erat vel varius. Donec eleifend leo non fringilla laoreet. Maecenas a&nbsp;efficitur
+                    placerat in&nbsp;erat vel varius. Donec eleifend leo non fringilla laoreet. Maecenas
+                    a&nbsp;efficitur
                     sem,
                     ultricies lacinia augue. Quisque pretium metus est, non laoreet velit ornare&nbsp;id. Suspendisse
                     sagittis
@@ -908,7 +1000,7 @@
                 <div class="swiper-slide">
                   <div class="reviews__post">
                     <span class="reviews__name">Анна Орлова</span>
-                    <p class="reviews__text">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе
+                    <p class="reviews__text">&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе
                       всегда
                       чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет
                       очередей&raquo;
@@ -937,7 +1029,8 @@
                 <div class="swiper-slide">
                   <div class="reviews__post">
                     <span class="reviews__name">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis augue enim, et&nbsp;feugiat
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis augue enim,
+                      et&nbsp;feugiat
                       eros.
                     </span>
                     <p class="reviews__text">
@@ -971,14 +1064,22 @@
                 </div>
               </div>
             </div>
-            <div class="reviews__button-prev swiper-button-prev"></div>
-            <div class="reviews__button-next swiper-button-next"></div>
+            <div class="reviews__button reviews__button--prev swiper-button-prev">
+              <svg width="16" height="32">
+                <use xlink:href="./img/sprite.svg#icon-arrow-prev" fill="none" stroke="#102654"></use>
+              </svg>
+            </div>
+            <div class="reviews__button reviews__button--next swiper-button-next">
+              <svg width="16" height="32">
+                <use xlink:href="./img/sprite.svg#icon-arrow-next" fill="none" stroke="#102654"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="customer-communication">
-        <div class="free-training" data-form-validate>
+        <div class="free-training" data-form-validate data-callback="base">
           <div class="free-training__wrapper">
             <h2 class="free-training__title title">Бесплатное занятие</h2>
             <form class="free-training__form" action="https://echo.htmlacademy.ru/" method="post">
@@ -986,15 +1087,15 @@
                 <div class="free-training__input-wrapper custom-input" data-validate-type="text" data-limitation="name"
                   data-message-base="Заполни" data-message-extra="Исправь" data-required>
                   <label>
-                    <input type="text" name="customer-name" placeholder="Имя" required
-                      maxlength="32" autocomplete="off">
+                    <input type="text" name="customer-name" placeholder="Имя" required maxlength="32"
+                      autocomplete="off">
                   </label>
                 </div>
                 <div class="free-training__input-wrapper custom-input" data-validate-type="phone" data-on-input-validate
                   data-message-base="Заполни" data-message-extra="Исправь" data-message-success="Всё ОК" data-required>
                   <label>
-                    <input type="tel" name="customer-phone" placeholder="Телефон" required
-                      maxlength="24" autocomplete="off">
+                    <input type="tel" name="customer-phone" placeholder="Телефон" required maxlength="24"
+                      autocomplete="off">
                   </label>
                 </div>
               </div>
@@ -1005,24 +1106,28 @@
         <div class="contacts">
           <div class="contacts__wrapper">
             <h2 class="contacts__title title">Контакты</h2>
-            <ul class="contacts__list">
-              <li class="contacts__item">
-                <span class="contacts__item-title">Адрес:</span>
-                <span class="contacts__item-text">г. Омск, ул. 60 лет Октября, 7</span>
-              </li>
-              <li class="contacts__item">
-                <span class="contacts__item-title">Телефон:</span>
-                <span class="contacts__item-text">8-800-555-55-55</span>
-              </li>
-              <li class="contacts__item">
-                <span class="contacts__item-title">График работы:</span>
-                <span class="contacts__item-text">Пн-Вс: с 8:00 до 22:00</span>
-              </li>
-              <li class="contacts__item">
-                <span class="contacts__item-title">Email:</span>
-                <span class="contacts__item-text">omsk@supergym.ru</span>
-              </li>
-            </ul>
+            <div class="contacts__list">
+              <ul class="contacts__list-wrapper">
+                <li class="contacts__item contacts__item--address">
+                  <span class="contacts__item-title">Адрес:</span>
+                  <span class="contacts__item-text">г. Омск, ул. 60 лет Октября, 7</span>
+                </li>
+                <li class="contacts__item contacts__item--schedule">
+                  <span class="contacts__item-title">График работы:</span>
+                  <span class="contacts__item-text">Пн-Вс: с 8:00 до 22:00</span>
+                </li>
+              </ul>
+              <ul class="contacts__list-wrapper">
+                <li class="contacts__item contacts__item--phone">
+                  <span class="contacts__item-title">Телефон:</span>
+                  <a class="contacts__item-text" href="tel:88005555555">8-800-555-55-55</a>
+                </li>
+                <li class="contacts__item contacts__item--email">
+                  <span class="contacts__item-title">Email:</span>
+                  <a class="contacts__item-text" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -1033,34 +1138,40 @@
       <div class="main-footer__wrapper">
         <ul class="main-footer__nav-list">
           <li class="main-footer__nav-item main-footer__nav-item--logo">
-            <a class="main-footer__logo" href="index.html">
+            <a class="main-footer__logo link" href="index.html">
               <picture>
                 <source media="(max-width: 320px)" width="68" height="13" srcset="./img/svg/logo.svg">
-                <source media="(max-width: 767px)" width="82" height="16" srcset="./img/svg/logo.svg">
+                <source media="(max-width: 768px)" width="82" height="16" srcset="./img/svg/logo.svg">
                 <img src="./img/svg/logo.svg" width="88" height="17" alt="Логотип">
               </picture>
             </a>
           </li>
-          <li class="main-footer__nav-item"><a class="main-footer__nav-link" href=#gym>Услуги</a></li>
-          <li class="main-footer__nav-item"><a class="main-footer__nav-link" href=#membership>Абонементы</a></li>
-          <li class="main-footer__nav-item"><a class="main-footer__nav-link" href=#special-offers>Акции</a></li>
-          <li class="main-footer__nav-item"><a class="main-footer__nav-link" href=#coaches>Тренеры</a></li>
-          <li class="main-footer__nav-item"><a class="main-footer__nav-link" href=#faq>Расписание</a></li>
+          <li class="main-footer__nav-item main-footer__nav-item--gym"><a class="main-footer__nav-link" href=#gym>Услуги</a></li>
+          <li class="main-footer__nav-item main-footer__nav-item--membership"><a class="main-footer__nav-link" href=#membership>Абонементы</a></li>
+          <li class="main-footer__nav-item main-footer__nav-item--offers"><a class="main-footer__nav-link" href=#special-offers>Акции</a></li>
+          <li class="main-footer__nav-item main-footer__nav-item--coaches"><a class="main-footer__nav-link" href=#coaches>Тренеры</a></li>
+          <li class="main-footer__nav-item main-footer__nav-item--faq"><a class="main-footer__nav-link" href=#faq>Расписание</a></li>
         </ul>
         <ul class="main-footer__social-list">
           <li class="main-footer__social-item">
             <a class="main-footer__social-link" href=# aria-label="Ссылка на группу в контакте.">
-              <svg width="15" height="15"><use xlink:href="./img/sprite.svg#vk-icon"></use></svg>
+              <svg width="15" height="15">
+                <use xlink:href="./img/sprite.svg#vk-icon"></use>
+              </svg>
             </a>
           </li>
           <li class="main-footer__social-item">
             <a class="main-footer__social-link" href=# aria-label="Ссылка на группу в одноклассниках.">
-              <svg width="10" height="17"><use xlink:href="./img/sprite.svg#ok-icon"></use></svg>
+              <svg width="10" height="17">
+                <use xlink:href="./img/sprite.svg#ok-icon"></use>
+              </svg>
             </a>
           </li>
           <li class="main-footer__social-item">
             <a class="main-footer__social-link" href=# aria-label="Ссылка на группу в реддите.">
-              <svg width="15" height="15"><use xlink:href="./img/sprite.svg#reddit-icon"></use></svg>
+              <svg width="15" height="15">
+                <use xlink:href="./img/sprite.svg#reddit-icon"></use>
+              </svg>
             </a>
           </li>
         </ul>

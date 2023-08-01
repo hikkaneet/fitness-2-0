@@ -1,8 +1,12 @@
 .coaches {
-  padding: 86px 0 104px;
+  padding: 82px 0 104px;
 
   @media (max-width: $bp-tablet-only) {
-    padding: 84px 0 100px;
+    padding: 74px 0 104px;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    padding: 38px 0 70px;
   }
 }
 
@@ -21,12 +25,13 @@
   line-height: normal;
   letter-spacing: 1.62px;
   margin: 0;
-  padding: 0 8%;
+  padding-left: calc(8% - 3px);
 
   @media (max-width: $bp-tablet-only) {
     font-size: 42px;
     letter-spacing: 1.26px;
     text-align: center;
+    padding-left: 0;
   }
 
   @media (max-width: $bp-mobile-only) {
@@ -36,14 +41,16 @@
 }
 
 .coaches__slider-wrapper {
-  margin: 48px 102px 0;
+  margin: 48px 8% 0;
+  margin-left: calc(8% - 6px);
+  margin-right: calc(8% - 6px);
 
   @media (max-width: $bp-tablet-only) {
-    margin: 30px 100px 0;
+    margin: 30px 13% 0;
   }
 
   @media (max-width: $bp-mobile-only) {
-    margin: 30px 0 0;
+    margin: 42px 15% 0;
   }
 }
 
@@ -58,16 +65,21 @@
   width: 100%;
   height: auto;
 
-  @media (max-width: $bp-mobile-only) {
-    padding-left: 20%;
-  }
-
   & img {
     width: 100%;
     background-color: #c4c6cf;
+    object-fit: cover;
+
+    @media (max-width: $bp-tablet-only) {
+      min-height: 294px;
+    }
 
     @media (max-width: $bp-mobile-only) {
-      width: 80%;
+      min-height: 274px;
+    }
+
+    @media (width: 768px) {
+      max-height: 294px;
     }
   }
 }
@@ -80,8 +92,12 @@
   font-weight: 700;
   line-height: 150%;
   position: absolute;
-  bottom: 30px;
+  bottom: 22px;
   overflow-wrap: anywhere;
+
+  @media (max-width: $bp-tablet-only) {
+    bottom: 34px;
+  }
 
   &--hidden {
     display: none;
@@ -89,7 +105,7 @@
 }
 
 .coaches__more-info {
-  padding: 16%;
+  padding: 20% 10%;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -106,9 +122,7 @@
   }
 
   @media (max-width: $bp-mobile-only) {
-    width: 64%;
-    margin-left: 4%;
-    padding: 6%;
+    padding: 42px 6% 20px;
   }
 }
 
@@ -129,13 +143,18 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%;
+  line-height: 140%;
   overflow-wrap: anywhere;
 }
 
 .coaches__info-list {
-  margin: 44px 0 0;
-  padding: 0;
+  margin: 30px 0 0;
+  padding: 0 0 0 22%;
+
+  @media (max-width: $bp-mobile-only) {
+    margin: 20px 0 0;
+    padding: 0 0 0 18%;
+  }
 }
 
 .coaches__info-item {
@@ -144,33 +163,81 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%;
-}
-
-.coaches__button-prev {
-  top: 55%;
-  left: 42px;
-  color: #afafaf;
+  line-height: 200%;
 
   @media (max-width: $bp-mobile-only) {
-    left: 20px;
-
-    &::after {
-      font-size: 22px;
-    }
+    margin: 5px 0 0;
   }
 }
 
-.coaches__button-next {
-  top: 55%;
-  right: 42px;
-  color: #afafaf;
+.coaches__button {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  @media (max-width: $bp-mobile-only) {
-    right: 20px;
+  @include focus-visible;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #102654;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  &:active {
+    border: 1px solid #102654;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: #102654;
+
+    & use {
+      stroke: #ffffff;
+    }
+  }
+
+  &--prev {
+    top: 62%;
+    left: 27px;
+    cursor: pointer;
+
+    @media (max-width: $bp-tablet-only) {
+      top: 59%;
+      left: 25px;
+    }
+
+    @media (max-width: $bp-mobile-only) {
+      top: 65%;
+      left: 14px;
+      width: 12px;
+      height: 21px;
+    }
 
     &::after {
-      font-size: 22px;
+      display: none;
+    }
+  }
+
+  &--next {
+    top: 62%;
+    right: 27px;
+    cursor: pointer;
+
+    @media (max-width: $bp-tablet-only) {
+      top: 59%;
+      right: 25px;
+    }
+
+    @media (max-width: $bp-mobile-only) {
+      top: 65%;
+      right: 14px;
+      width: 12px;
+      height: 21px;
+    }
+
+    &::after {
+      display: none;
     }
   }
 }

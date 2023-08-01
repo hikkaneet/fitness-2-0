@@ -1,7 +1,8 @@
 .main-footer {
   flex-grow: 0;
   flex-shrink: 0;
-  padding: 0 104px;
+  padding-left: calc(7% + 6px);
+  padding-right: calc(7% + 6px);
   min-height: 108px;
   background-color: $color-black-russian;
 
@@ -11,7 +12,7 @@
   }
 
   @media (max-width: $bp-mobile-only) {
-    padding: 50px 16px;
+    padding: 48px 16px;
     min-height: 200px;
   }
 }
@@ -21,51 +22,88 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
+
+  @media (max-width: $bp-mobile-only) {
+    flex-direction: column;
+  }
 }
 
 .main-footer__nav-list {
   margin: 0;
-  padding: 0;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
   position: relative;
-  padding-left: 88px;
-  max-width: 90%;
+  padding: 0 0 0 116px;
+  max-width: calc(100% - 120px);
 
   @media (max-width: $bp-tablet-only) {
-    padding-left: 82px;
+    padding: 0 0 0 118px;
+    gap: 31px;
   }
 
   @media (max-width: $bp-mobile-only) {
-    padding-left: 0;
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
     max-width: 100%;
+    column-gap: 33px;
+    row-gap: 15px;
   }
 }
 
 .main-footer__nav-item {
+  @media (max-width: $bp-mobile-only) {
+    letter-spacing: 1px;
+  }
+
   &--logo {
     position: absolute;
     left: 0;
     user-select: none;
+    padding-top: 8px;
 
-    @media (max-width: $bp-mobile) {
+    @media (max-width: $bp-tablet-only) {
+      padding-top: 0;
+    }
+
+    @media (max-width: $bp-mobile-only) {
       position: static;
+      order: 1;
     }
   }
 
   @include focus-visible;
+
+  @media (max-width: $bp-mobile-only) {
+    &--offers {
+      order: 2;
+    }
+
+    &--gym {
+      order: 3;
+    }
+
+    &--coaches {
+      order: 4;
+    }
+
+    &--membership {
+      order: 5;
+    }
+
+    &--faq {
+      order: 6;
+    }
+  }
 }
 
 .main-footer__nav-link {
@@ -108,17 +146,23 @@
 
 .main-footer__social-list {
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
   list-style: none;
   display: flex;
   justify-items: center;
   flex-wrap: wrap;
   gap: 12px;
-  max-width: 12%;
+  max-width: 110px;
+
+
+  @media (max-width: $bp-tablet-only) {
+    gap: 10px;
+  }
 
   @media (max-width: $bp-mobile-only) {
-    padding-top: 40px;
+    margin: 14px auto 0 0;
     max-width: 100%;
+    gap: 9px;
   }
 }
 
@@ -132,7 +176,7 @@
   border-radius: 50%;
   cursor: pointer;
 
-  & svg path {
+  & svg {
     fill: $color-sapphire;
   }
 
@@ -140,7 +184,7 @@
   &:focus {
     background-color: $color-egyptian-blue;
 
-    & svg path {
+    & svg {
       fill: $color-default-white;
     }
   }
@@ -148,7 +192,7 @@
   &:active {
     background-color: $color-sapphire;
 
-    & svg path {
+    & svg {
       fill: $color-default-white;
     }
 
@@ -158,4 +202,14 @@
   }
 
   @include focus-visible;
+}
+
+.main-footer__logo {
+  margin-top: 5px;
+
+  @include focus-visible;
+
+  @media (max-width: $bp-tablet-only) {
+    margin-top: 0;
+  }
 }

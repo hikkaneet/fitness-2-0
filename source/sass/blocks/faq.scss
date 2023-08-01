@@ -1,9 +1,15 @@
 .faq {
   background-color: #f8f9fc;
-  padding: 120px 6%;
+  padding: 120px 7% 120px;
+  padding-left: calc(7% + 6px);
+  padding-right: calc(7% + 6px);
 
   @media (max-width: $bp-tablet-only) {
-    padding: 108px 5%;
+    padding: 100px 6% 108px;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    padding: 70px 4%;
   }
 }
 
@@ -42,6 +48,12 @@
 
   @media (max-width: $bp-tablet-only) {
     flex-direction: column;
+    gap: 38px;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    margin-top: 30px;
+    gap: 30px;
   }
 }
 
@@ -51,7 +63,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   flex-wrap: wrap;
 
   @media (max-width: $bp-tablet-only) {
@@ -72,14 +84,16 @@
   padding: 18px 0;
   border: 1px solid rgba(16, 38, 84, 0.2);
   user-select: none;
+  cursor: pointer;
 
   @media (max-width: $bp-tablet-only) {
-    width: 22%;
+    width: 24%;
   }
 
   @media (max-width: $bp-mobile-only) {
     width: 48%;
     font-size: 16px;
+    padding: 13px 0;
   }
 
   &:hover,
@@ -135,6 +149,18 @@
         display: none;
       }
     }
+
+    & .faq__accordion-text {
+      margin: -18px 0 22px 2px;
+
+      @media (max-width: $bp-tablet-only) {
+        margin: -18px 0 24px 0;
+      }
+
+      @media (max-width: $bp-mobile-only) {
+        margin: -8px 0 18px 2px;
+      }
+    }
   }
 }
 
@@ -142,7 +168,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 25px 0;
+  cursor: pointer;
+
+  @media (max-width: $bp-tablet-only) {
+    margin: 0;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    padding: 20px 0;
+    margin: 0 0 0 2px;
+  }
 }
 
 .faq__accordion-title {
@@ -158,6 +194,10 @@
     font-size: 18px;
     line-height: 1.2;
   }
+
+  @media (max-width: $bp-mobile-only) {
+    letter-spacing: 0;
+  }
 }
 
 .faq__accordion-text {
@@ -167,10 +207,12 @@
   font-style: normal;
   font-weight: 300;
   line-height: 140%;
+  padding-right: 22%;
   margin: 0;
 
   @media (max-width: $bp-mobile-only) {
     font-size: 16px;
+    padding-right: 0;
   }
 }
 
@@ -185,6 +227,12 @@
   box-sizing: border-box;
   margin-left: 16px;
 
+  @media (max-width: $bp-mobile-only) {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -194,6 +242,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media (max-width: $bp-mobile-only) {
+      width: 12px;
+    }
   }
 
   &::after {
@@ -205,6 +257,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media (max-width: $bp-mobile-only) {
+      height: 12px;
+    }
   }
 
   &:hover,

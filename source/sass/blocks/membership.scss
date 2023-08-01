@@ -1,15 +1,20 @@
 .membership {
-  padding: 120px 6% 244px;
+  padding: 120px 3% 240px;
   background-color: $color-ghost-white;
   overflow: hidden;
   background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
   background-repeat: no-repeat;
-  background-size: 100% 90px;
+  background-size: 100% 120px;
   background-position: bottom center;
 
   @media (max-width: $bp-tablet-only) {
     padding: 102px 6% 180px;
     background-size: 100% 80px;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    padding: 62px 5% 70px;
+    background-size: 0;
   }
 }
 
@@ -35,6 +40,11 @@
     font-size: 42px;
     letter-spacing: 1.26px;
   }
+
+  @media (max-width: $bp-mobile-only) {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+  }
 }
 
 .membership__tabs-wrapper {
@@ -43,13 +53,17 @@
   margin-left: auto;
   margin-right: auto;
 
+  @media (max-width: $bp-mobile-only) {
+    gap: 44px;
+  }
+
   &::after {
     position: absolute;
     content: "";
     height: 2px;
     width: 100%;
     background-color: rgba(120, 120, 120, 0.2);
-    bottom: -20px;
+    bottom: -12px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -63,6 +77,25 @@
   font-weight: 400;
   line-height: 150%;
   user-select: none;
+  position: relative;
+
+  @include focus-visible;
+
+  &:hover,
+  &:focus {
+    color: rgba(16, 38, 84, 1);
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 100%;
+      background-color: #d10a42;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 
   @media (max-width: $bp-tablet-only) {
     font-size: 18px;
@@ -70,6 +103,7 @@
 
   @media (max-width: $bp-mobile-only) {
     font-size: 16px;
+    letter-spacing: 0;
   }
 }
 
@@ -79,7 +113,7 @@
   flex-direction: column;
   align-items: center;
   width: 28%;
-  padding: 46px 0;
+  padding: 54px 10px 62px;
   position: relative;
   border: 7px solid $color-default-white;
 
@@ -88,12 +122,13 @@
   }
 
   @media (max-width: $bp-tablet-only) {
-    width: 58vw;
-    padding: 52px 0 60px;
+    width: 65%;
+    padding: 58px 0;
   }
 
   @media (max-width: $bp-mobile-only) {
-    width: 90vw;
+    width: 100%;
+    padding: 38px 0 46px;
   }
 }
 
@@ -105,10 +140,14 @@
   font-style: normal;
   font-weight: 700;
   line-height: 110%;
+
+  @media (max-width: $bp-mobile-only) {
+    font-size: 22px;
+  }
 }
 
 .membership__card-info {
-  margin-top: 22px;
+  margin-top: 12px;
   color: #495a7d;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 16px;
@@ -127,7 +166,7 @@
 
 .membership__card-price {
   display: block;
-  margin-top: 54px;
+  margin-top: 62px;
   color: #103aae;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 60px;
@@ -140,6 +179,16 @@
   @media (max-width: $bp-tablet-only) {
     margin-top: 64px;
   }
+
+  @media (max-width: $bp-mobile-only) {
+    font-size: 48px;
+    line-height: 150%;
+    margin-top: 54px;
+
+    & svg {
+      transform: scale(0.8);
+    }
+  }
 }
 
 .membership__card-price-shadow {
@@ -150,18 +199,24 @@
   font-weight: 700;
   line-height: 150%;
   position: absolute;
-  top: 0;
+  top: 10px;
   left: -20px;
   user-select: none;
 
   @media (max-width: $bp-tablet-only) {
     top: 10px;
   }
+
+  @media (max-width: $bp-mobile-only) {
+    font-size: 80px;
+    line-height: 150%;
+    margin-left: 6px;
+  }
 }
 
 .membership__button {
   margin-top: 36px;
-  padding: 28px 44px;
+  padding: 23px 44px;
   box-sizing: border-box;
   color: #102654;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
@@ -177,17 +232,22 @@
   @media (max-width: $bp-tablet-only) {
     padding: 24px 44px;
   }
+
+  @media (max-width: $bp-mobile-only) {
+    padding: 24px 16%;
+    margin-top: 30px;
+  }
 }
 
 .membership__decor {
   position: absolute;
   transform: rotate(150deg);
-  right: -190px;
-  bottom: -240px;
+  right: -150px;
+  bottom: -216px;
 
   @media (max-width: $bp-tablet-only) {
     right: -54px;
-    bottom: -184px;
+    bottom: -178px;
     width: 290px;
   }
 
@@ -198,5 +258,10 @@
 
 .membership__card-list {
   flex-wrap: wrap;
-  row-gap: 40px;
+  justify-content: center;
+  gap: 40px;
+
+  @media (max-width: $bp-mobile-only) {
+    gap: 44px;
+  }
 }

@@ -1,18 +1,18 @@
 .gym {
   @include centred-flex;
-  gap: 6%;
-  padding: 120px 6% 234px 12%;
+  padding-top: 120px;
+  padding-right: calc(7% + 6px);
+  padding-bottom: 234px;
+  padding-left: calc(12% + -5px);
   position: relative;
 
   @media (max-width: $bp-tablet-only) {
     flex-direction: column;
-    gap: 0;
     padding: 60px 6% 182px 6%;
   }
 
   @media (max-width: $bp-mobile-only) {
-    gap: 0;
-    padding: 70px 0;
+    padding: 62px 0 72px;
   }
 }
 
@@ -20,7 +20,6 @@
   max-width: $bp-max-limiter;
   display: flex;
   justify-content: space-between;
-  gap: 8%;
 
   @media (max-width: $bp-tablet-only) {
     flex-direction: column;
@@ -40,7 +39,7 @@
 }
 
 .gym__title {
-  margin: 0;
+  margin: 40px 0 0 4px;
   text-align: left;
   font-size: 48px;
   font-family: "Alumni Sans", "Arial", "Helvetica", sans-serif;
@@ -58,12 +57,15 @@
 
   @media (max-width: $bp-mobile-only) {
     text-align: left;
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 0.96px;
   }
 }
 
 .gym__info {
+  margin: 8px 0 0 4px;
   display: block;
-  margin-top: 10px;
   font-size: 18px;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-style: normal;
@@ -78,11 +80,12 @@
 
   @media (max-width: $bp-mobile-only) {
     text-align: left;
+    margin: 6px 0 0 0;
   }
 }
 
 .gym__description {
-  margin: 38px 0 0;
+  margin: 38px 0 0 4px;
   font-size: 16px;
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-style: normal;
@@ -97,11 +100,13 @@
 
   @media (max-width: $bp-mobile-only) {
     text-align: left;
-    padding: 0;
+    padding: 0 10% 0 0;
+    margin: 24px 0 0;
   }
 
   &--hidden {
-    margin: 10px 0 0;
+    margin: 10px 0 0 4px;
+    padding: 0 30px 0 0;
 
     @media (max-width: $bp-tablet-only) {
       display: none;
@@ -115,6 +120,10 @@
 
   @media (max-width: $bp-tablet-only) {
     margin-top: 42px;
+  }
+
+  @media (max-width: $bp-mobile-only) {
+    margin-top: 32px;
   }
 
   & img {

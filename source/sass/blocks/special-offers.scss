@@ -1,16 +1,18 @@
 .special-offers {
   background-color: $color-default-white;
-  padding: 128px 6% 120px;
+  padding: 132px 7% 120px;
+  padding-left: calc(7% + 6px);
+  padding-right: calc(7% + 6px);
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (max-width: $bp-tablet-only) {
-    padding: 92px 6%;
+    padding: 92px 6% 100px;
   }
 
   @media (max-width: $bp-mobile-only) {
-    padding: 70px 6%;
+    padding: 62px 0 70px;
   }
 }
 
@@ -46,7 +48,7 @@
 
   @media (max-width: $bp-tablet-only) {
     gap: 30px;
-    margin-top: 46px;
+    margin-top: 42px;
   }
 
   @media (max-width: $bp-mobile-only) {
@@ -80,7 +82,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 24px 30px;
+  padding: 24px 26px 30px;
 
   @media (max-width: $bp-tablet-only) {
     min-height: 210px;
@@ -88,6 +90,7 @@
 
   @media (max-width: $bp-mobile-only) {
     align-items: center;
+    padding: 34px 10% 40px;
   }
 }
 
@@ -121,9 +124,11 @@
 
   &--contrast {
     color: $color-default-white;
+    font-size: 18px;
+    padding-top: 20px;
 
     @media (max-width: $bp-tablet-only) {
-      padding-top: 18px;
+      padding-top: 20px;
     }
   }
 }
@@ -136,7 +141,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 1;
-  padding-top: 10px;
+  padding-top: 4px;
 }
 
 .special-offers__link {
@@ -161,7 +166,7 @@
     width: 100%;
     background-color: #1c3374;
     left: 0;
-    bottom: -4px;
+    bottom: -2px;
   }
 
   &--contrast {
@@ -183,6 +188,10 @@
 
   & img {
     width: 100%;
+
+    @media (width: 320px) {
+      max-height: 299px;
+    }
   }
 }
 
@@ -190,20 +199,20 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 45px;
-  max-width: min-content;
+  padding: 42px 20px 48px 46px;
+  // max-width: min-content;
 
   @media (max-width: $bp-tablet-only) {
     justify-content: flex-start;
-    gap: 186px;
-    padding: 0 0 0 48px;
+    gap: 190px;
+    padding: 0 0 0 44px;
   }
 
   @media (max-width: $bp-mobile-only) {
     align-items: center;
     min-height: 300px;
     padding: 0;
-    gap: 40px;
+    gap: 26px;
     max-width: 100%;
   }
 }
