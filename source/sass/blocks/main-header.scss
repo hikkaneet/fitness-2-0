@@ -67,10 +67,13 @@
   justify-content: flex-start;
   gap: 20px;
   flex-wrap: wrap;
-  max-width: calc(100% - 120px);
+  max-width: 80%;
+
+  @media (max-width: $bp-tablet-only) {
+    max-width: 70%;
+  }
 
   @media (max-width: $bp-mobile-only) {
     gap: 0;
-    max-width: calc(100% - 90px);
   }
 }
