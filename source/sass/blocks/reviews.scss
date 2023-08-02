@@ -4,11 +4,11 @@
   background-color: $color-default-white;
 
   @media (max-width: $bp-tablet-only) {
-    padding: 86px 0 100px;
+    padding: 86px 0 98px;
   }
 
   @media (max-width: $bp-mobile-only) {
-    padding: 62px 0 70px;
+    padding: 62px 0 68px;
   }
 }
 
@@ -25,6 +25,7 @@
   position: relative;
 
   @media (max-width: $bp-tablet-only) {
+    margin-top: 43px;
     padding: 0 13%;
   }
 
@@ -95,6 +96,8 @@
 }
 
 .reviews__button {
+  border: 0;
+  background: 0;
   width: 56px;
   height: 56px;
   display: flex;

@@ -35,17 +35,17 @@
   margin: 0;
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-grow: 1;
   flex-wrap: wrap;
   gap: 40px;
   position: relative;
-  padding: 0 0 0 116px;
+  padding: 20px 0 20px 367px;
   max-width: calc(100% - 120px);
 
   @media (max-width: $bp-tablet-only) {
-    padding: 0 0 0 118px;
+    padding: 20px 0 20px 144px;
     gap: 31px;
   }
 

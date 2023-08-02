@@ -1,6 +1,9 @@
 .hero {
   padding: 50px 10% 51px 8%;
   background: $main-screen-gradient;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (max-width: $bp-tablet-only) {
     padding: 82px 6% 82px 5%;
@@ -13,10 +16,10 @@
 }
 
 .hero__wrapper {
-  margin-right: 15%;
   max-width: $bp-max-limiter;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 
   @media (max-width: $bp-tablet-only) {
     margin-right: 0;
@@ -32,10 +35,9 @@
   flex-direction: column;
   align-items: flex-end;
   margin: 0 0 0 11px;
-  margin-right: 5%;
 
   @media (max-width: $bp-tablet-only) {
-    margin: 0 4% 0 7px;
+    margin: 0 0 0 7px;
   }
 
   @media (max-width: $bp-mobile-only) {
@@ -77,7 +79,7 @@
 
     @media (max-width: $bp-tablet-only) {
       margin-top: 58px;
-      margin-right: 0;
+      margin-right: 2px;
       font-size: 34px;
       letter-spacing: 1.02px;
     }
@@ -100,6 +102,7 @@
     color: $color-default-white;
     margin: 30px 0 0 16px;
     text-transform: uppercase;
+    -webkit-text-stroke: 2px;
 
     @media (max-width: $bp-tablet-only) {
       font-size: 72px;
@@ -118,9 +121,11 @@
     color: $color-default-white;
     margin: 306px 0 0 3px;
     word-wrap: break-word;
+    max-width: 500px;
 
     @media (max-width: $bp-tablet-only) {
       margin: 186px 0 0 0;
+      max-width: 300px;
     }
 
     @media (max-width: $bp-mobile-only) {
@@ -141,13 +146,15 @@
 
   @media (max-width: $bp-tablet-only) {
     margin-top: 36px;
-    padding: 20px 30px;
+    margin-right: -2px;
+    padding: 20px 32px;
   }
 
   @media (max-width: $bp-mobile-only) {
     width: 100%;
     text-align: center;
     margin-top: 24px;
+    margin-right: 0;
     padding: 20px 8%;
   }
 
@@ -155,7 +162,13 @@
 }
 
 .hero__picture {
+  height: fit-content;
   background-color: #04072a;
+  margin: auto 15% auto 3%;
+
+  @media (max-width: $bp-tablet-only) {
+    margin: auto 0% auto 4%;
+  }
 
   @media (max-width: $bp-mobile-only) {
     display: none;

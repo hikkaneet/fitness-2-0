@@ -275,4 +275,6 @@
       background-color: $color-default-white;
     }
   }
+
+  @include focus-visible;
 }

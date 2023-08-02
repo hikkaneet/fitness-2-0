@@ -1,62 +1,49 @@
 .play-button {
   margin: 0;
   padding: 0;
+  outline: 0;
+  border: 0;
+  background: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100px;
   height: 100px;
-  border: 2px solid #f6c8d4;
-  border-radius: 50%;
 
   @media (max-width: $bp-tablet-only) {
     width: 73px;
     height: 73px;
   }
 
-  & button {
-    width: 72px;
-    height: 72px;
-    border: none;
-    border-radius: 50%;
-    background-color: transparent;
-    background-image: linear-gradient(to right, #ed0233, #003eb7);
-
-    @media (max-width: $bp-tablet-only) {
-      width: 52px;
-      height: 52px;
-    }
-  }
-
-  & svg {
-    fill: #ffffff;
-
-    @media (max-width: $bp-tablet-only) {
-      width: 10px;
-      height: 12px;
-    }
-  }
-
   &:hover,
-  :focus,
-  :active {
-    border: 2px solid #102654;
+  &:focus,
+  &:active {
+    & .play-button__default {
+      display: none;
+    }
+
+    & .play-button__active {
+      display: block;
+    }
   }
 
-  &:hover button,
-  :focus button,
-  :active button {
-    background-color: #ffffff;
-    background-image: none;
+  &:disabled {
+    & .play-button__default {
+      display: none;
+    }
+
+    & .play-button__active {
+      display: block;
+      opacity: 0.4;
+    }
   }
 
-  &:hover svg,
-  :focus svg,
-  :active svg {
-    fill: #102654;
+  & img {
+    background-color: transparent;
   }
+}
+
+.play-button__active {
+  display: none;
 }

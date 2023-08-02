@@ -119,6 +119,22 @@
 
   &:hover {
     border-image: $button-gradient 1;
+
+    & a {
+      outline: 0;
+      color: $color-default-white;
+      background: $button-gradient;
+    }
+
+    & a:active {
+      outline: 0;
+      color: rgba($color-default-white, 0.7);
+      background: $button-gradient;
+    }
+  }
+
+  &:focus-within {
+    border-image: $button-gradient 1;
   }
 
   @media (max-width: $bp-tablet-only) {
